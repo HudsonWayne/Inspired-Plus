@@ -1,48 +1,43 @@
-/* PAGE BASE */
+/* GLOBAL PAGE */
+
 .about-page {
   font-family: 'Inter', sans-serif;
+  background: #f5f6f7;
   color: #0b1f44;
   line-height: 1.7;
-  background: #f5f6f7;
 }
 
-/* HERO SECTION */
+/* GLOBAL CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* HERO */
+
 .hero-section {
-      background-color: #0b3f52;
-    color: white;
-  padding: 6rem 1.5rem 4rem 1.5rem;
+  background: #0b3f52;
+  padding: 6rem 0 4rem 0;
+  color: white;
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
-}
-
-@media (min-width: 900px) {
-  .hero-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.hero-left {
-  flex: 1;
+  align-items: center;
 }
 
 .hero-title {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0;
-  color: white;
 }
 
 .hero-right {
-  flex: 1;
   text-align: center;
 }
 
@@ -51,38 +46,56 @@
   height: auto;
 }
 
+/* HERO DESKTOP */
+
+@media (min-width: 900px) {
+
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-left {
+    flex: 1;
+  }
+
+  .hero-right {
+    flex: 1;
+  }
+
+}
+
 /* CENTRAL PARAGRAPH */
+
 .central-paragraph-section {
-  padding: 3rem 1.3rem;
+  padding: 3rem 0;
   text-align: center;
 }
 
-.central-paragraph-container {
+.paragraph-container {
   max-width: 900px;
-  margin: auto;
 }
 
 .central-paragraph-large {
   font-size: 1.25rem;
   color: #4b5563;
-  line-height: 1.8;
 }
 
-/* WHO WE ARE SECTION */
+/* WHO WE ARE */
+
 .who-we-are-section {
-  padding: 4rem 1.5rem;
-  background: #ffffff;
+  background: white;
+  padding: 4rem 0;
 }
 
 .content-container {
   max-width: 1000px;
-  margin: auto;
 }
+
+/* TITLES */
 
 .section-title {
   font-size: 2rem;
-  color: #0b1f44;
-  font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1rem;
   border-left: 4px solid #0b1f44;
@@ -95,47 +108,122 @@
   margin-bottom: 1.5rem;
 }
 
+/* DIFFERENCE LIST */
+
 .difference-list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.8rem;
-  margin-top: 1rem;
+  gap: 12px;
 }
 
+.bullet {
+  color: #1d4ed8;
+  margin-right: 8px;
+}
+
+/* TWO COLUMN TABLET */
+
 @media (min-width: 768px) {
+
   .difference-list {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
-.difference-list li {
-  font-size: 1.05rem;
-  padding-left: 1.8rem;
-  position: relative;
-  color: #0b1f44;
-  font-weight: 500;
+/* CONSULTATION SECTION */
+
+.consultation-section {
+  padding: 5rem 20px;
 }
 
-.difference-list li .bullet {
-  position: absolute;
-  left: 0;
-  color: #1d4ed8;
-  font-weight: 700;
+/* CARD WIDTH CONTROL */
+
+.consultation-wrapper {
+  max-width: 600px;
+  margin: auto;
 }
 
-/* GENERAL STYLING */
-h1, h2, h3, h4 {
-  line-height: 1.3;
+/* CARD */
+
+.consultation-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-p {
-  line-height: 1.7;
+/* IMAGE */
+
+.consultation-image {
+  width: 140px;
+  margin-bottom: 1.5rem;
 }
 
-@media (max-width: 900px) {
+/* TEXT */
+
+.consultation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.consultation-text {
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.text-field {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.text-field:focus {
+  outline: none;
+  border-color: #0b3f52;
+}
+
+/* BUTTON */
+
+.consultation-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  background: #0b3f52;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.consultation-button:hover {
+  background: #092f3c;
+}
+
+/* MOBILE TYPOGRAPHY */
+
+@media (max-width: 768px) {
+
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
+
+  .central-paragraph-large {
+    font-size: 1.1rem;
+  }
+
 }
