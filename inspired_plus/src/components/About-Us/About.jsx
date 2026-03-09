@@ -22,8 +22,8 @@ export default function About() {
       </section>
 
       {/* Central Paragraph Section */}
-      <div className="central-paragraph-container" style={{ marginTop: "10px" }}>
-        <div className="central-paragraph w-container">
+      <section className="central-paragraph-section">
+        <div className="central-paragraph-container">
           <p className="central-paragraph-large">
             Key Training, part of Teaching 4 Business, has grown to be one of the
             largest and most successful training providers of its kind in the UK,
@@ -35,11 +35,12 @@ export default function About() {
             helping businesses and individuals grow.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* Who We Are Section */}
-      <section className="who-we-are-section" style={{ marginTop: "40px" }}>
+      <section className="who-we-are-section">
         <div className="content-container">
+
           <h2 className="section-title">Who We Are</h2>
           <p className="section-text">
             We are a professional training provider specialising in leadership and
@@ -62,15 +63,17 @@ export default function About() {
 
           <h2 className="section-title">What Makes Us Different</h2>
           <ul className="difference-list">
-            <li>Experienced assessors</li>
-            <li>One-to-one learner support</li>
-            <li>Structured online ePortfolio system</li>
-            <li>Flexible learning approach</li>
-            <li>Career and interview preparation support</li>
-            <li>Guidance through Ofsted processes</li>
+            <li><span className="bullet">✓</span> Experienced assessors</li>
+            <li><span className="bullet">✓</span> One-to-one learner support</li>
+            <li><span className="bullet">✓</span> Structured online ePortfolio system</li>
+            <li><span className="bullet">✓</span> Flexible learning approach</li>
+            <li><span className="bullet">✓</span> Career and interview preparation support</li>
+            <li><span className="bullet">✓</span> Guidance through Ofsted processes</li>
           </ul>
+
         </div>
       </section>
+
     </div>
   );
 }
