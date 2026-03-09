@@ -1,0 +1,133 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    background-color: #033445;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Nav Links */
+.nav-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #1d4ed8; /* Blue hover */
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  min-width: 250px;
+  z-index: 50;
+}
+
+.employers-menu {
+  min-width: 500px;
+}
+
+.individuals-menu {
+  min-width: 450px;
+  grid-template-columns: 1fr;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #1c8dd8;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f3f4f6;
+}
+
+.menu-title {
+  font-weight: 600;
+}
+
+.menu-subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.call-link {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #00378a;
+}
+
+.call-link span {
+  font-weight: bold;
+}
+
+.contact-button {
+  background-color: rgb(0, 92, 134);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact-button:hover {
+  background-color: #333;
+}

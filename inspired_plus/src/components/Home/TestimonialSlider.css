@@ -1,0 +1,105 @@
+.testimonial-section {
+  background: #f6f6f6;
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* TITLE */
+
+.testimonial-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/* DECORATION */
+
+.shape-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pink-shape {
+  width: 220px;
+  height: 140px;
+  background: #d79aa1;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.yellow-circle {
+  width: 90px;
+  height: 90px;
+  background: #efc75e;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+
+/* SLIDER */
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.4s ease;
+}
+
+/* CARD */
+
+.testimonial-card {
+  background: white;
+  min-width: 310px;
+  padding: 35px;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.testimonial-text {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.testimonial-info .name {
+  font-weight: 600;
+}
+
+.company {
+  color: #666;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+
+.slider-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.slider-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #e79da3;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}

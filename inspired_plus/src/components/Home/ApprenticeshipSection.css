@@ -1,0 +1,71 @@
+.apprenticeship-section {
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  background: #083b4c;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 60px;
+  min-height: 420px;
+}
+
+/* Big turquoise semicircle */
+.circle {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: #38bcc4;
+  border-radius: 50%;
+  left: -200px;
+  bottom: -300px;
+}
+
+/* layout */
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* text side */
+.text {
+  max-width: 500px;
+  color: white;
+}
+
+.tag {
+  letter-spacing: 2px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.text h1 {
+  font-size: 40px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.link {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* button */
+.btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #e6e6e6;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* image side */
+.image img {
+  height: 420px;
+  object-fit: contain;
+}
