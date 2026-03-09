@@ -1,0 +1,110 @@
+/* About Page Styles */
+
+.about-page {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-title {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.hero-graphic {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Central Paragraph */
+.central-paragraph-container {
+  max-width: 900px;
+  margin: 10px auto;
+}
+
+.central-paragraph-large {
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.content-container {
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #646cff;
+}
+
+.section-text {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.difference-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (prefers-color-scheme: light) {
+  .about-page {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  .central-paragraph-large {
+    color: #213547;
+  }
+
+  .section-title {
+    color: #535bf2;
+  }
+}
