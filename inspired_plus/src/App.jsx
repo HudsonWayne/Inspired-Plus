@@ -1,20 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Home from "../src/Pages/Home";
 
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Courses from "./Pages/Courses";
 
 function App() {
   return (
     <Router>
+      {/* Navbar stays on all pages */}
       <Navbar />
 
-      {/* All <Route> components MUST be inside <Routes> */}
+      {/* Page Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
-   
+        <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
       </Routes>
+
+      {/* Footer stays on all pages */}
       <Footer />
     </Router>
   );
