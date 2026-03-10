@@ -15,7 +15,6 @@ export default function Services() {
               Level 5 Diploma in Leadership & Management for Residential Childcare.
             </h1>
 
-            {/* Get in touch button */}
             <Link
               to="/contact/employer-get-in-touch"
               className="navigation-white-button w-button"
@@ -50,14 +49,20 @@ export default function Services() {
 
       {/* UPSKILL EMPLOYEES SECTION */}
       <section className="upskill-section">
-        <div className="container upskill-container">
-          <div className="upskill-left">
+        <div className="container upskill-grid">
+
+          <div className="upskill-text">
             <h2 className="content-teaser-heading-two">
               Upskill existing employees with Adult Apprenticeships
             </h2>
+
             <p className="paragraph">
-              At Key Training, we help you unlock government funding to grow your business, improve productivity and boost employee morale. We take the time to get to know your people, your business and how to get the most from the apprenticeship levy, to train your existing employees.
+              At Key Training, we help you unlock government funding to grow your business,
+              improve productivity and boost employee morale. We take the time to get to know
+              your people, your business and how to get the most from the apprenticeship levy,
+              to train your existing employees.
             </p>
+
             <Link
               to="/employer/train-your-employees"
               className="black-button w-button"
@@ -65,13 +70,15 @@ export default function Services() {
               Find out more
             </Link>
           </div>
-          <div className="upskill-right">
+
+          <div className="upskill-image-wrapper">
             <img
               src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/63088fbb3f689a4b58eedd1d_Person%20working.png"
               alt="Employee Training"
               className="upskill-image"
             />
           </div>
+
         </div>
       </section>
 

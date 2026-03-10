@@ -106,7 +106,7 @@
 .upskill-right {
   flex: 1;
   text-align: center;
-  min-width: 280px;
+  min-width: 80px;
 }
 
 .upskill-image {
@@ -207,6 +207,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.the-img{
+    width: 100px;
+    height: 100px;
+}
+
+
 
 .consultation-button:hover {
   background: #092f3c;
