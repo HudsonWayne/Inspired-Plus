@@ -14,14 +14,12 @@ export default function Navbar() {
 
       <div className="navbar-container">
 
-        {/* Logo */}
-        <div className="navbar-logo">
-          <Link to="/">
-            <img src={logo} alt="Company Logo" />
-          </Link>
-        </div>
+        {/* LOGO */}
+        <Link to="/" className="navbar-logo">
+          <img src={logo} alt="Company Logo" />
+        </Link>
 
-        {/* Hamburger */}
+        {/* HAMBURGER */}
         <div
           className={`hamburger ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -31,79 +29,81 @@ export default function Navbar() {
           <span></span>
         </div>
 
-        {/* Navigation */}
+        {/* NAVIGATION */}
         <nav className={`navbar-nav ${menuOpen ? "active" : ""}`}>
 
-          {/* Employers */}
+          {/* EMPLOYERS */}
           <div className="dropdown">
 
             <button
               className="dropdown-toggle"
               onClick={() => setEmployersOpen(!employersOpen)}
             >
-              Employers ▾
+              Employers
             </button>
 
-            <div className={`dropdown-menu ${employersOpen ? "show" : ""} employers-menu`}>
+            <div className={`dropdown-menu ${employersOpen ? "show" : ""}`}>
 
               <a href="#">
-                <p className="menu-title">What we offer →</p>
-                <p className="menu-subtext">
+                <div className="menu-title">What we offer</div>
+                <div className="menu-subtext">
                   Find out more about how we can help your business
-                </p>
+                </div>
               </a>
 
               <a href="#">
-                <p className="menu-title">Upskill your employees →</p>
-                <p className="menu-subtext">
+                <div className="menu-title">Upskill your employees</div>
+                <div className="menu-subtext">
                   Train your existing workforce
-                </p>
+                </div>
               </a>
 
               <a href="#">
-                <p className="menu-title">Hire an apprentice →</p>
-                <p className="menu-subtext">
+                <div className="menu-title">Hire an apprentice</div>
+                <div className="menu-subtext">
                   Build junior talent
-                </p>
+                </div>
               </a>
 
               <a href="#">
-                <p className="menu-title">Training courses →</p>
-                <p className="menu-subtext">
+                <div className="menu-title">Training courses</div>
+                <div className="menu-subtext">
                   See our wide range of courses
-                </p>
+                </div>
               </a>
 
             </div>
+
           </div>
 
-          {/* Individuals */}
+          {/* INDIVIDUALS */}
           <div className="dropdown">
 
             <button
               className="dropdown-toggle"
               onClick={() => setIndividualsOpen(!individualsOpen)}
             >
-              Individuals ▾
+              Individuals
             </button>
 
-            <div className={`dropdown-menu ${individualsOpen ? "show" : ""} individuals-menu`}>
+            <div className={`dropdown-menu ${individualsOpen ? "show" : ""}`}>
 
               <a href="#">
-                <p className="menu-title">Apprenticeships →</p>
-                <p className="menu-subtext">
+                <div className="menu-title">Apprenticeships</div>
+                <div className="menu-subtext">
                   Kickstart your career
-                </p>
+                </div>
               </a>
 
               <a href="#">
-                <p className="menu-title">Vacancies →</p>
-                <p className="menu-subtext">
+                <div className="menu-title">Vacancies</div>
+                <div className="menu-subtext">
                   See the latest apprenticeship vacancies
-                </p>
+                </div>
               </a>
 
             </div>
+
           </div>
 
           <Link to="/courses" className="nav-link">
@@ -114,7 +114,7 @@ export default function Navbar() {
             About Us
           </Link>
 
-          {/* Mobile Right Section */}
+          {/* MOBILE CONTACT */}
           <div className="mobile-right">
 
             <a href="tel:+44741911375" className="call-link">
@@ -129,7 +129,7 @@ export default function Navbar() {
 
         </nav>
 
-        {/* Desktop Right */}
+        {/* DESKTOP RIGHT */}
         <div className="navbar-right">
 
           <a href="tel:+44741911375" className="call-link">
