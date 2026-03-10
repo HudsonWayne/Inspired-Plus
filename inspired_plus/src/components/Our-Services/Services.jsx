@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css"; // reuse your About.css for styling
+import "../About-Us/About.css";
 import { Link } from "react-router-dom";
 
 export default function Services() {
