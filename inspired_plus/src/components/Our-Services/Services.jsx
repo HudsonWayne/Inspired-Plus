@@ -14,6 +14,8 @@ export default function Services() {
             <h1 className="hero-title">
               Invest in the future of your business with Key Training
             </h1>
+
+            {/* Get in touch button */}
             <Link
               to="/contact/employer-get-in-touch"
               className="navigation-white-button w-button"
@@ -37,14 +39,12 @@ export default function Services() {
       {/* CENTRAL PARAGRAPH */}
       <section className="central-paragraph-section">
         <div className="container paragraph-container">
-
           <p className="central-paragraph-large">
             Key Training provides a range of leadership, management, and apprenticeship solutions
             designed to help your business grow, upskill your workforce, and nurture junior talent.
             <br /><br />
-            Our tailored programs are designed to meet industry standards and help your team excel.
+            Our tailored programs meet industry standards and help your team excel.
           </p>
-
         </div>
       </section>
 
@@ -55,6 +55,7 @@ export default function Services() {
           <h2 className="section-title">
             Level 5 Diploma in Leadership and Management for Residential Childcare
           </h2>
+
           <p className="section-text">
             This diploma is designed for professionals looking to develop advanced leadership
             and management skills within the residential childcare sector.
