@@ -106,29 +106,10 @@ export default function About() {
 
             <form className="consultation-form">
 
-              <input
-                type="text"
-                placeholder="Your name"
-                className="text-field"
-              />
-
-              <input
-                type="email"
-                placeholder="Email address"
-                className="text-field"
-              />
-
-              <input
-                type="tel"
-                placeholder="Phone number"
-                className="text-field"
-              />
-
-              <input
-                type="text"
-                placeholder="Postcode"
-                className="text-field"
-              />
+              <input type="text" placeholder="Your name" className="text-field" />
+              <input type="email" placeholder="Email address" className="text-field" />
+              <input type="tel" placeholder="Phone number" className="text-field" />
+              <input type="text" placeholder="Postcode" className="text-field" />
 
               <button className="consultation-button">
                 Submit
