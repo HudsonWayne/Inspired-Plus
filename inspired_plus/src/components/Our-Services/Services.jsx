@@ -1,5 +1,5 @@
 import React from "react";
-import "../About-Us/About.css";
+import "../Our-Services/Services.css";
 import { Link } from "react-router-dom";
 
 export default function Services() {
@@ -47,10 +47,11 @@ export default function Services() {
         </div>
       </section>
 
-      {/* UPSKILL EMPLOYEES SECTION */}
+      {/* UPSKILL SECTION */}
       <section className="upskill-section">
         <div className="container upskill-grid">
 
+          {/* TEXT LEFT */}
           <div className="upskill-text">
             <h2 className="content-teaser-heading-two">
               Upskill existing employees with Adult Apprenticeships
@@ -71,9 +72,10 @@ export default function Services() {
             </Link>
           </div>
 
+          {/* IMAGE RIGHT */}
           <div className="upskill-image-wrapper">
             <img
-              src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/63088fbb3f689a4b58eedd1d_Person%20working.png"
+              src="/person-working.png"
               alt="Employee Training"
               className="upskill-image"
             />
