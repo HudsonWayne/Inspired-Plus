@@ -50,7 +50,7 @@ export default function Services() {
 
       {/* UPSKILL EMPLOYEES SECTION */}
       <section className="upskill-section">
-        <div className="container grid">
+        <div className="container upskill-container">
           <div className="upskill-left">
             <h2 className="content-teaser-heading-two">
               Upskill existing employees with Adult Apprenticeships
