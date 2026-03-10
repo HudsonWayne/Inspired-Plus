@@ -6,7 +6,7 @@ export default function About() {
     <div className="about-page">
 
       {/* HERO */}
-      <section className="hero-section">
+      <section className="hero-section2">
         <div className="container hero-container">
 
           <div className="hero-left">

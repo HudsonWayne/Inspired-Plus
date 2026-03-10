@@ -19,7 +19,7 @@
 
 /* HERO */
 
-.hero-section {
+.hero-section2 {
   background: #0b3f52;
   padding: 6rem 0 4rem 0;
   color: white;
@@ -206,9 +206,9 @@
 
 @media (max-width: 768px) {
 
-  .hero-section {
+  .hero-section2 {
     padding: 4rem 0 2.5rem 0;
-    height: 42vh;
+    height: 40vh;
   }
 
   .hero-title {
