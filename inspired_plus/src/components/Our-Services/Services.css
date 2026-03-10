@@ -1,4 +1,4 @@
-/* Services.css */
+/* Services & About Page CSS */
 
 /* GLOBAL PAGE */
 .about-page {
@@ -85,46 +85,61 @@
   line-height: 1.7;
 }
 
-/* WHO WE ARE / SERVICES OFFERING */
-.who-we-are-section {
+/* UPSKILL EMPLOYEES SECTION */
+.upskill-section {
   background: #ffffff;
   padding: 4rem 0;
 }
 
-.content-container {
-  max-width: 1000px;
-  margin: auto;
+.upskill-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-/* TITLES */
-.section-title {
+.upskill-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.upskill-right {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.upskill-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-teaser-heading-two {
   font-size: 2rem;
-  margin-top: 2rem;
   margin-bottom: 1rem;
-  border-left: 4px solid #0b1f44;
-  padding-left: 12px;
 }
 
-.section-text {
+.paragraph {
   font-size: 1.1rem;
   color: #4b5563;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
-/* LIST */
-.difference-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
+.black-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background-color: #0b3f52;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.bullet {
-  color: #1d4ed8;
-  margin-right: 8px;
+.black-button:hover {
+  background-color: #092f3c;
 }
 
 /* CONSULTATION CARD */
@@ -197,13 +212,8 @@
   background: #092f3c;
 }
 
-
 /* TABLET STYLES */
 @media (min-width: 768px) {
-  .difference-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .hero-container {
     flex-direction: row;
     justify-content: space-between;
@@ -219,9 +229,13 @@
     flex: 1;
     text-align: right;
   }
+
+  .upskill-container {
+    flex-wrap: nowrap;
+  }
 }
 
-/* MOBILE OPTIMIZATION */
+/* MOBILE STYLES */
 @media (max-width: 768px) {
   .hero-section2 {
     padding: 4rem 0 2.5rem 0;
@@ -235,35 +249,11 @@
     font-size: 1.05rem;
   }
 
-  .section-title {
+  .content-teaser-heading-two {
     font-size: 1.5rem;
   }
 
-  .section-text {
+  .paragraph {
     font-size: 1rem;
-  }
-
-  .consultation-card {
-    padding: 1.8rem;
-  }
-
-  .consultation-image {
-    width: 110px;
-  }
-
-  .consultation-title {
-    font-size: 20px;
-  }
-
-  .consultation-text {
-    font-size: 14px;
-  }
-
-  .text-field {
-    padding: 10px;
-  }
-
-  .consultation-button {
-    padding: 10px 20px;
   }
 }
