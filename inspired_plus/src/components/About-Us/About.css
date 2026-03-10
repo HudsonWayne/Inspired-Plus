@@ -7,7 +7,7 @@
   line-height: 1.7;
 }
 
-/* GLOBAL CONTAINER */
+/* CONTAINER */
 
 .container {
   width: 100%;
@@ -108,7 +108,7 @@
   margin-bottom: 1.5rem;
 }
 
-/* DIFFERENCE LIST */
+/* LIST */
 
 .difference-list {
   list-style: none;
@@ -124,7 +124,7 @@
   margin-right: 8px;
 }
 
-/* TWO COLUMN TABLET */
+/* TABLET */
 
 @media (min-width: 768px) {
 
@@ -134,21 +134,17 @@
 
 }
 
-/* CONSULTATION SECTION */
+/* CONSULTATION */
 
 .consultation-section {
   padding: 5rem 20px;
-   background: #083c4a;
+  background: #083c4a;
 }
-
-/* CARD WIDTH CONTROL */
 
 .consultation-wrapper {
   max-width: 600px;
   margin: auto;
 }
-
-/* CARD */
 
 .consultation-card {
   background: #083c4a;
@@ -158,14 +154,10 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* IMAGE */
-
 .consultation-image {
   width: 140px;
   margin-bottom: 1.5rem;
 }
-
-/* TEXT */
 
 .consultation-title {
   font-size: 24px;
@@ -176,8 +168,6 @@
   color: white;
   margin-bottom: 25px;
 }
-
-/* FORM */
 
 .consultation-form {
   display: flex;
@@ -197,8 +187,6 @@
   border-color: #0b3f52;
 }
 
-/* BUTTON */
-
 .consultation-button {
   margin-top: 10px;
   padding: 12px 24px;
@@ -208,23 +196,71 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
-  transition: 0.25s;
 }
 
 .consultation-button:hover {
   background: #092f3c;
 }
 
-/* MOBILE TYPOGRAPHY */
+/* MOBILE OPTIMIZATION */
 
 @media (max-width: 768px) {
 
+  .hero-section {
+    padding: 4rem 0 2.5rem 0;
+  }
+
   .hero-title {
-    font-size: 2.3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .central-paragraph-section {
+    padding: 2rem 0;
   }
 
   .central-paragraph-large {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+  }
+
+  .who-we-are-section {
+    padding: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .consultation-section {
+    padding: 3rem 20px;
+  }
+
+  .consultation-card {
+    padding: 1.8rem;
+  }
+
+  .consultation-image {
+    width: 110px;
+  }
+
+  .consultation-title {
+    font-size: 20px;
+  }
+
+  .consultation-text {
+    font-size: 14px;
+  }
+
+  .text-field {
+    padding: 10px;
+  }
+
+  .consultation-button {
+    padding: 10px 20px;
   }
 
 }
