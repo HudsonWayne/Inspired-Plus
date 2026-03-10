@@ -44,33 +44,34 @@ export default function Navbar() {
 
             <div className={`dropdown-menu ${employersOpen ? "show" : ""}`}>
 
-              <a href="#">
+              {/* Updated to React Router Link */}
+              <Link to="/services">
                 <div className="menu-title">What we offer</div>
                 <div className="menu-subtext">
                   Find out more about how we can help your business
                 </div>
-              </a>
+              </Link>
 
-              <a href="#">
+              <Link to="/services#upskill">
                 <div className="menu-title">Upskill your employees</div>
                 <div className="menu-subtext">
                   Train your existing workforce
                 </div>
-              </a>
+              </Link>
 
-              <a href="#">
+              <Link to="/services#hire">
                 <div className="menu-title">Hire an apprentice</div>
                 <div className="menu-subtext">
                   Build junior talent
                 </div>
-              </a>
+              </Link>
 
-              <a href="#">
+              <Link to="/services#training">
                 <div className="menu-title">Training courses</div>
                 <div className="menu-subtext">
                   See our wide range of courses
                 </div>
-              </a>
+              </Link>
 
             </div>
 
@@ -88,19 +89,19 @@ export default function Navbar() {
 
             <div className={`dropdown-menu ${individualsOpen ? "show" : ""}`}>
 
-              <a href="#">
+              <Link to="/apprenticeships">
                 <div className="menu-title">Apprenticeships</div>
                 <div className="menu-subtext">
                   Kickstart your career
                 </div>
-              </a>
+              </Link>
 
-              <a href="#">
+              <Link to="/vacancies">
                 <div className="menu-title">Vacancies</div>
                 <div className="menu-subtext">
                   See the latest apprenticeship vacancies
                 </div>
-              </a>
+              </Link>
 
             </div>
 
@@ -121,9 +122,9 @@ export default function Navbar() {
               Call us on <span>+(44)741 911 375</span>
             </a>
 
-            <button className="contact-button">
+            <Link to="/contact/employer-get-in-touch" className="contact-button">
               Get in touch
-            </button>
+            </Link>
 
           </div>
 
@@ -136,9 +137,9 @@ export default function Navbar() {
             Call us on <span>+(44)741 911 375</span>
           </a>
 
-          <button className="contact-button">
+          <Link to="/contact/employer-get-in-touch" className="contact-button">
             Get in touch
-          </button>
+          </Link>
 
         </div>
 
