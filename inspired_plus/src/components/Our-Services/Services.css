@@ -1,0 +1,268 @@
+/* Services.css */
+
+/* GLOBAL PAGE */
+.about-page {
+  font-family: 'Inter', sans-serif;
+  background: #f5f6f7;
+  color: #0b1f44;
+  line-height: 1.7;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* HERO SECTION */
+.hero-section2 {
+  background: #0b3f52;
+  padding: 6rem 0 4rem 0;
+  color: white;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-left {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-right {
+  text-align: center;
+}
+
+.hero-graphic {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* HERO BUTTON */
+.navigation-white-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #0b3f52;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navigation-white-button:hover {
+  background-color: #e1e5ea;
+  color: #0b3f52;
+}
+
+/* CENTRAL PARAGRAPH */
+.central-paragraph-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.paragraph-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.central-paragraph-large {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* WHO WE ARE / SERVICES OFFERING */
+.who-we-are-section {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* TITLES */
+.section-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #0b1f44;
+  padding-left: 12px;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* LIST */
+.difference-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.bullet {
+  color: #1d4ed8;
+  margin-right: 8px;
+}
+
+/* CONSULTATION CARD */
+.consultation-section {
+  padding: 5rem 20px;
+  background: #083c4a;
+}
+
+.consultation-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
+.consultation-card {
+  background: #083c4a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.consultation-image {
+  width: 140px;
+  margin-bottom: 1.5rem;
+}
+
+.consultation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.consultation-text {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.text-field {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.text-field:focus {
+  outline: none;
+  border-color: #0b3f52;
+}
+
+.consultation-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  background: #0b3f52;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.consultation-button:hover {
+  background: #092f3c;
+}
+
+/* TABLET STYLES */
+@media (min-width: 768px) {
+  .difference-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-left {
+    text-align: left;
+    flex: 1;
+  }
+
+  .hero-right {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .hero-section2 {
+    padding: 4rem 0 2.5rem 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .central-paragraph-large {
+    font-size: 1.05rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .consultation-card {
+    padding: 1.8rem;
+  }
+
+  .consultation-image {
+    width: 110px;
+  }
+
+  .consultation-title {
+    font-size: 20px;
+  }
+
+  .consultation-text {
+    font-size: 14px;
+  }
+
+  .text-field {
+    padding: 10px;
+  }
+
+  .consultation-button {
+    padding: 10px 20px;
+  }
+}

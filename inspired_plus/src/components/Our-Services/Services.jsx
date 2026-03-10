@@ -6,24 +6,13 @@ export default function Services() {
   return (
     <div className="about-page">
 
-      {/* NEW CENTRAL PARAGRAPH BEFORE HERO */}
-      <section className="central-paragraph-section">
-        <div className="container paragraph-container">
-          <p className="central-paragraph-large">
-            At Key Training, we help you unlock government funding to upskill and train your existing employees with Adult Apprenticeships. By delivering the right learning, at the right time, we can effectively equip your people with the knowledge, skills and behaviours, tips and techniques that will increase their performance.
-            <br /><br />
-            Adult Apprenticeships can be standalone or we can create a bespoke package based on your needs with our training courses. Our expert advisors will work with you to create the right learning and development strategy for your organisation.
-          </p>
-        </div>
-      </section>
-
       {/* HERO SECTION */}
       <section className="hero-section2">
         <div className="container hero-container">
 
           <div className="hero-left">
             <h1 className="hero-title">
-              Level 5 Diploma in Leadership & Management for Residential Childcare
+              Level 5 Diploma in Leadership & Management for Residential Childcare.
             </h1>
 
             {/* Get in touch button */}
