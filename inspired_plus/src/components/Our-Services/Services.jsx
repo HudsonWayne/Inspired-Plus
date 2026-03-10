@@ -12,7 +12,7 @@ export default function Services() {
 
           <div className="hero-left">
             <h1 className="hero-title">
-              Invest in the future of your business with Key Training
+              Level 5 Diploma in Leadership & Management for Residential Childcare.
             </h1>
 
             {/* Get in touch button */}
