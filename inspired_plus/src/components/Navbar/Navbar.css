@@ -3,7 +3,8 @@
 .navbar {
   width: 100%;
   background: #033445;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -29,9 +30,11 @@
   gap: 30px;
 }
 
+/* LINKS */
+
 .nav-link {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: 500;
 }
 
@@ -39,7 +42,7 @@
   color: #1d4ed8;
 }
 
-/* RIGHT SECTION */
+/* RIGHT */
 
 .navbar-right {
   display: flex;
@@ -49,8 +52,8 @@
 
 .call-link {
   font-size: 14px;
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
 .call-link span {
@@ -90,10 +93,10 @@
   left: 0;
   background: white;
   border-radius: 8px;
-  padding: 16px;
+  padding: 15px;
   display: none;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   min-width: 250px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
@@ -137,7 +140,7 @@
   background: white;
 }
 
-/* MOBILE RIGHT */
+/* MOBILE CONTACT */
 
 .mobile-right {
   display: none;
@@ -172,10 +175,13 @@
     display: flex;
   }
 
+  /* CRITICAL FIX FOR MOBILE DROPDOWN */
+
   .dropdown-menu {
     position: relative;
     width: 100%;
-    background: #ffffff;
+    background: white;
+    margin-top: 10px;
   }
 
   .dropdown-toggle {
