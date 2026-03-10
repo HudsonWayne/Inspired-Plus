@@ -48,26 +48,30 @@ export default function Services() {
         </div>
       </section>
 
-      {/* SERVICES OFFERING */}
-      <section className="who-we-are-section">
-        <div className="container content-container">
-
-          <h2 className="section-title">
-            Level 5 Diploma in Leadership and Management for Residential Childcare
-          </h2>
-
-          <p className="section-text">
-            This diploma is designed for professionals looking to develop advanced leadership
-            and management skills within the residential childcare sector.
-          </p>
-
-          <ul className="difference-list">
-            <li><span className="bullet">✓</span> Learn advanced leadership strategies</li>
-            <li><span className="bullet">✓</span> Improve compliance and regulatory understanding</li>
-            <li><span className="bullet">✓</span> Develop team management and operational skills</li>
-            <li><span className="bullet">✓</span> Receive guidance from experienced assessors</li>
-          </ul>
-
+      {/* UPSKILL EMPLOYEES SECTION */}
+      <section className="upskill-section">
+        <div className="container grid">
+          <div className="upskill-left">
+            <h2 className="content-teaser-heading-two">
+              Upskill existing employees with Adult Apprenticeships
+            </h2>
+            <p className="paragraph">
+              At Key Training, we help you unlock government funding to grow your business, improve productivity and boost employee morale. We take the time to get to know your people, your business and how to get the most from the apprenticeship levy, to train your existing employees.
+            </p>
+            <Link
+              to="/employer/train-your-employees"
+              className="black-button w-button"
+            >
+              Find out more
+            </Link>
+          </div>
+          <div className="upskill-right">
+            <img
+              src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/63088fbb3f689a4b58eedd1d_Person%20working.png"
+              alt="Employee Training"
+              className="upskill-image"
+            />
+          </div>
         </div>
       </section>
 
