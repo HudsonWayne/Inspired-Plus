@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/1c8e7d523094f80430f9e85e4313312f_InspiredPlus_LogoWeb.png";
-import "../../components/Navbar/Navbar.css";
+import "./Navbar.css";
 
 export default function Navbar() {
 
