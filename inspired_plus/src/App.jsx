@@ -8,6 +8,9 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Courses from "./Pages/Courses";
 
+// Import Services page
+import Services from "./components/Our-Services/Services";
+
 function App() {
   return (
     <Router>
@@ -19,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/services" element={<Services />} /> {/* Added Services route */}
       </Routes>
 
       {/* Footer stays on all pages */}
