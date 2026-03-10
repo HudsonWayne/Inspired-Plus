@@ -237,9 +237,63 @@
     text-align: right;
   }
 
-  .upskill-container {
-    flex-wrap: nowrap;
-  }
+/* UPSKILL SECTION */
+
+.upskill-section{
+  background:#ffffff;
+  padding:4rem 0;
+}
+
+.upskill-grid{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+}
+
+.upskill-text{
+  flex:1;
+  max-width:550px;
+}
+
+.upskill-image-wrapper{
+  flex:1;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.upskill-image{
+  max-width:520px;
+  width:100%;
+  height:auto;
+}
+
+.content-teaser-heading-two{
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.paragraph{
+  font-size:1.1rem;
+  color:#4b5563;
+  margin-bottom:1.5rem;
+  line-height:1.6;
+}
+
+.black-button{
+  display:inline-block;
+  padding:12px 28px;
+  border-radius:30px;
+  background:#0b3f52;
+  color:white;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.black-button:hover{
+  background:#092f3c;
+}
 }
 
 /* MOBILE STYLES */

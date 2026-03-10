@@ -47,11 +47,10 @@ export default function Services() {
         </div>
       </section>
 
-      {/* UPSKILL SECTION */}
+      {/* UPSKILL SECTION 1 */}
       <section className="upskill-section">
         <div className="container upskill-grid">
 
-          {/* TEXT LEFT */}
           <div className="upskill-text">
             <h2 className="content-teaser-heading-two">
               Upskill existing employees with Adult Apprenticeships
@@ -59,24 +58,108 @@ export default function Services() {
 
             <p className="paragraph">
               At Key Training, we help you unlock government funding to grow your business,
-              improve productivity and boost employee morale. We take the time to get to know
-              your people, your business and how to get the most from the apprenticeship levy,
-              to train your existing employees.
+              improve productivity and boost employee morale.
             </p>
 
-            <Link
-              to="/employer/train-your-employees"
-              className="black-button w-button"
-            >
+            <Link to="/employer/train-your-employees" className="black-button w-button">
               Find out more
             </Link>
           </div>
 
-          {/* IMAGE RIGHT */}
           <div className="upskill-image-wrapper">
             <img
               src="/person-working.png"
               alt="Employee Training"
+              className="upskill-image"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* UPSKILL SECTION 2 */}
+      <section className="upskill-section-two">
+        <div className="container upskill-grid-two">
+
+          <div className="upskill-text-two">
+            <h2 className="content-teaser-heading-two">
+              Develop leadership skills within your workforce
+            </h2>
+
+            <p className="paragraph">
+              Our leadership programs are designed to empower your managers
+              with practical tools and strategies to guide teams effectively.
+            </p>
+
+            <Link to="/employer/train-your-employees" className="black-button w-button">
+              Find out more
+            </Link>
+          </div>
+
+          <div className="upskill-image-wrapper-two">
+            <img
+              src="/person-working.png"
+              alt="Leadership Training"
+              className="upskill-image"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* UPSKILL SECTION 3 */}
+      <section className="upskill-section-three">
+        <div className="container upskill-grid-three">
+
+          <div className="upskill-text-three">
+            <h2 className="content-teaser-heading-two">
+              Build future talent with apprenticeships
+            </h2>
+
+            <p className="paragraph">
+              Apprenticeships allow businesses to develop skilled employees
+              while benefiting from structured training and government support.
+            </p>
+
+            <Link to="/employer/train-your-employees" className="black-button w-button">
+              Find out more
+            </Link>
+          </div>
+
+          <div className="upskill-image-wrapper-three">
+            <img
+              src="/person-working.png"
+              alt="Apprenticeship Training"
+              className="upskill-image"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* UPSKILL SECTION 4 */}
+      <section className="upskill-section-four">
+        <div className="container upskill-grid-four">
+
+          <div className="upskill-text-four">
+            <h2 className="content-teaser-heading-two">
+              Support business growth through training
+            </h2>
+
+            <p className="paragraph">
+              Training and development initiatives help companies stay competitive
+              while improving staff engagement and productivity.
+            </p>
+
+            <Link to="/employer/train-your-employees" className="black-button w-button">
+              Find out more
+            </Link>
+          </div>
+
+          <div className="upskill-image-wrapper-four">
+            <img
+              src="/person-working.png"
+              alt="Business Growth"
               className="upskill-image"
             />
           </div>
@@ -100,8 +183,7 @@ export default function Services() {
             </h3>
 
             <p className="consultation-text">
-              Speak with our team to tailor a program for your business, upskill your staff,
-              or build junior talent through apprenticeships.
+              Speak with our team to tailor a program for your business.
             </p>
 
             <form className="consultation-form">
