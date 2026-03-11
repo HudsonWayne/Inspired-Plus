@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function Services() {
+
   const courses = [
     {
       title: "Course Overview",
@@ -69,9 +70,10 @@ export default function Services() {
   return (
     <div className="about-page">
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="hero-section2">
         <div className="container hero-container">
+
           <div className="hero-left">
             <h1 className="hero-title">
               Level 5 Diploma in Leadership & Management for Residential Childcare.
@@ -80,7 +82,6 @@ export default function Services() {
             <Link
               to="/contact/employer-get-in-touch"
               className="navigation-white-button"
-              style={{ marginTop: "20px", display: "inline-block" }}
             >
               Get in touch
             </Link>
@@ -93,8 +94,10 @@ export default function Services() {
               className="hero-graphic"
             />
           </div>
+
         </div>
       </section>
+
 
       {/* CAROUSEL */}
       <section className="course-details-section">
@@ -115,8 +118,10 @@ export default function Services() {
                 768: { slidesPerView: 2 },
               }}
             >
+
               {courses.map((course, index) => (
                 <SwiperSlide key={index}>
+
                   <div className="course-card">
 
                     <h3 className="content-teaser-heading-two">
@@ -136,15 +141,18 @@ export default function Services() {
                     )}
 
                   </div>
+
                 </SwiperSlide>
               ))}
+
             </Swiper>
 
-            {/* Navigation Buttons */}
+            {/* NAVIGATION ARROWS */}
             <div className="swiper-button-prev custom-arrow"></div>
             <div className="swiper-button-next custom-arrow"></div>
 
           </div>
+
         </div>
       </section>
 

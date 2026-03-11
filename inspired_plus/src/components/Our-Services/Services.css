@@ -1,4 +1,5 @@
 /* GLOBAL PAGE */
+
 .about-page {
   font-family: 'Inter', sans-serif;
   background: #f5f6f7;
@@ -7,6 +8,7 @@
 }
 
 /* CONTAINER */
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -15,7 +17,8 @@
   padding-right: 20px;
 }
 
-/* HERO SECTION */
+/* HERO */
+
 .hero-section2 {
   background: #0b3f52;
   padding: 6rem 0 4rem 0;
@@ -45,276 +48,126 @@
 
 .hero-graphic {
   max-width: 100%;
-  height: auto;
-  margin-top: 1rem;
 }
 
 /* HERO BUTTON */
+
 .navigation-white-button {
   display: inline-block;
+  margin-top: 20px;
   padding: 12px 28px;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: white;
   color: #0b3f52;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
 }
 
 .navigation-white-button:hover {
-  background-color: #e1e5ea;
-  color: #0b3f52;
+  background: #e1e5ea;
 }
 
-/* CENTRAL PARAGRAPH */
-.central-paragraph-section {
-  padding: 3rem 0;
-  text-align: center;
-}
+/* COURSE SECTION */
 
-.paragraph-container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.central-paragraph-large {
-  font-size: 1.25rem;
-  color: #4b5563;
-  line-height: 1.7;
-}
-
-/* COURSE CARDS */
 .course-details-section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.swiper {
+  padding-bottom: 80px;
+}
+
+/* EQUAL HEIGHT SLIDES */
+
+.swiper-slide {
+  display: flex;
+}
+
+/* CARD */
 
 .course-card {
-  background: #f5f6f7;
+  background: white;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  width: 100%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.1);
 }
 
 .course-card h3 {
   color: #0b3f52;
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
+  font-size: 22px;
 }
 
 .course-card ul {
-  list-style-type: disc;
   padding-left: 20px;
 }
 
-.course-card ul li {
-  margin-bottom: 0.5rem;
+.course-card li {
+  margin-bottom: 6px;
 }
 
 .course-card p {
-  font-size: 1.05rem;
   color: #4b5563;
-  line-height: 1.6;
 }
 
-/* UPSKILL SECTIONS */
-.upskill-section,
-.upskill-section-two,
-.upskill-section-three,
-.upskill-section-four {
-  background: #ffffff;
-  padding: 4rem 0;
-}
+/* ARROWS */
 
-.upskill-grid,
-.upskill-grid-two,
-.upskill-grid-three,
-.upskill-grid-four {
+.custom-arrow {
+  position: absolute;
+  bottom: 0;
+  width: 46px;
+  height: 46px;
+  background: #0b3f52;
+  border-radius: 50%;
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
-.upskill-text,
-.upskill-text-two,
-.upskill-text-three,
-.upskill-text-four {
-  flex: 1;
-  max-width: 550px;
+.swiper-button-prev {
+  right: 70px;
+  left: auto;
 }
 
-.upskill-image-wrapper,
-.upskill-image-wrapper-two,
-.upskill-image-wrapper-three,
-.upskill-image-wrapper-four {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+.swiper-button-next {
+  right: 10px;
 }
 
-.upskill-image {
-  max-width: 520px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.content-teaser-heading-two {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.paragraph {
-  font-size: 1.1rem;
-  color: #4b5563;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.black-button {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 30px;
-  background-color: #0b3f52;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.black-button:hover {
-  background-color: #092f3c;
-}
-
-/* CONSULTATION CARD */
-.consultation-section {
-  padding: 5rem 20px;
-  background: #083c4a;
-}
-
-.consultation-wrapper {
-  max-width: 600px;
-  margin: auto;
-}
-
-.consultation-card {
-  background: #083c4a;
-  padding: 2.5rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.consultation-image {
-  width: 140px;
-  margin-bottom: 1.5rem;
-}
-
-.consultation-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.consultation-text {
-  color: white;
-  margin-bottom: 25px;
-  font-size: 1rem;
-}
-
-.consultation-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.text-field {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-}
-
-.text-field:focus {
-  outline: none;
-  border-color: #0b3f52;
-}
-
-.consultation-button {
-  margin-top: 10px;
-  padding: 12px 24px;
-  border-radius: 25px;
-  border: none;
-  background: #0b3f52;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.consultation-button:hover {
+.custom-arrow:hover {
   background: #092f3c;
 }
 
-/* TABLET STYLES */
-@media (min-width: 768px) {
-  .hero-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* MOBILE */
 
-  .hero-left {
-    text-align: left;
-    flex: 1;
-  }
+@media (max-width:768px){
 
-  .hero-right {
-    flex: 1;
-    text-align: right;
-            font-size: 2.75rem;
-  }
+.hero-title{
+font-size:32px;
 }
 
-/* MOBILE STYLES */
-@media (max-width: 768px) {
-  .hero-section2 {
-    padding: 4rem 0 2.5rem 0;
-  }
+.swiper-button-prev{
+right:60px;
+}
 
-  .hero-title {
-            font-size: 2.75rem;
-  }
-
-  .central-paragraph-large {
-    font-size: 1.05rem;
-  }
-
-  .content-teaser-heading-two {
-    font-size: 1.5rem;
-  }
-
-  .paragraph {
-    font-size: 1rem;
-  }
-
-  .upskill-grid,
-  .upskill-grid-two,
-  .upskill-grid-three,
-  .upskill-grid-four {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .upskill-image-wrapper,
-  .upskill-image-wrapper-two,
-  .upskill-image-wrapper-three,
-  .upskill-image-wrapper-four {
-    justify-content: center;
-  }
 }
