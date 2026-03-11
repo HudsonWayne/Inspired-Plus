@@ -78,9 +78,7 @@ export default function Navbar() {
 
               <Link to="/vacancies">
                 <div className="menu-title">Vacancies</div>
-                <div className="menu-subtext">
-                  See the latest apprenticeship vacancies
-                </div>
+
               </Link>
 
             </div>
