@@ -139,35 +139,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* UPSKILL SECTION 4 */}
-      <section className="upskill-section-four">
-        <div className="container upskill-grid-four">
 
-          <div className="upskill-text-four">
-            <h2 className="content-teaser-heading-two">
-              Support business growth through training
-            </h2>
-
-            <p className="paragraph">
-              Training and development initiatives help companies stay competitive
-              while improving staff engagement and productivity.
-            </p>
-
-            <Link to="/employer/train-your-employees" className="black-button w-button">
-              Find out more
-            </Link>
-          </div>
-
-          <div className="upskill-image-wrapper-four">
-            <img
-              src="/person-working.png"
-              alt="Business Growth"
-              className="upskill-image"
-            />
-          </div>
-
-        </div>
-      </section>
 
       {/* CONSULTATION CARD */}
       <section className="consultation-section">
