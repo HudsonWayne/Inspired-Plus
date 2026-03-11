@@ -4,6 +4,7 @@
   background: #f5f6f7;
   color: #0b1f44;
   line-height: 1.7;
+  padding-bottom: 4rem;
 }
 
 /* CONTAINER */
@@ -21,16 +22,19 @@
 }
 
 .vacancies-title {
-  font-size: 36px;
+  font-size: 40px;
   color: #0b3f52;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .vacancies-intro {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #4b5563;
   margin-bottom: 0.75rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* JOB CARDS */
@@ -43,22 +47,23 @@
 
 .job-card {
   background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #0b3f52;
 }
 
 .job-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 35px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.1);
 }
 
 .job-title {
-  font-size: 24px;
+  font-size: 26px;
   color: #0b3f52;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .job-company,
@@ -67,6 +72,7 @@
   font-size: 1rem;
   margin-bottom: 0.25rem;
   color: #0b1f44;
+  font-weight: 500;
 }
 
 .job-description {
@@ -83,22 +89,36 @@
 }
 
 .job-apply {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 24px;
+  background: #0b3f52;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
   font-weight: 600;
-  color: #0b3f52;
+  transition: background 0.3s ease;
+}
+
+.job-apply:hover {
+  background: #092f3c;
 }
 
 /* BENEFITS SECTION */
 .vacancies-benefits {
   background: #ffffff;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   border-radius: 12px;
-  margin: 2rem 0;
+  margin: 3rem 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 .benefits-title {
-  font-size: 24px;
+  font-size: 26px;
   color: #0b3f52;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .benefits-list {
@@ -109,10 +129,43 @@
   line-height: 1.8;
 }
 
+.benefits-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+.benefits-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #0b3f52;
+  font-weight: bold;
+}
+
 /* FOOTER SECTION */
 .vacancies-footer {
   text-align: center;
   padding: 2rem 0;
   color: #4b5563;
   font-size: 1.05rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vacancies-title {
+    font-size: 32px;
+  }
+
+  .job-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .job-apply {
+    padding: 8px 20px;
+  }
+
+  .vacancies-benefits {
+    padding: 2rem 1.5rem;
+  }
 }
