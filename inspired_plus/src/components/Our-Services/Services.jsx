@@ -103,7 +103,6 @@ export default function Services() {
               Find out more
             </Link>
           </div>
-
         </div>
       </section>
 
@@ -137,72 +136,42 @@ export default function Services() {
         </div>
       </section>
 
-      {/* CONSULTATION PANEL (WEBFLOW STYLE) */}
+      {/* CONSULTATION CARD */}
       <section className="consultation-section">
-        <div className="contact-box container">
-
-          <div className="div-block">
+        <div className="consultation-wrapper">
+          <div className="consultation-card">
 
             <img
               src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/62e94e4fff1174ba77609a4e_Group%2032%20(1).png"
-              alt=""
-              className="image-2"
+              alt="Consultation"
+              className="consultation-image"
             />
 
-            <h3 className="contact-panel-h3">
+            <h3 className="consultation-title">
               Book a consultation
             </h3>
 
-            <p className="contact-panel-large-paragraph">
-              We're ready to answer your questions about upskilling your workforce,
-              boosting your junior talent or putting together bespoke training plans.
+            <p className="consultation-text">
+              Speak with our team to tailor a program for your business.
             </p>
 
-            <div className="form-block">
+            {/* NEW ADDED INFO */}
+            <p className="consultation-text">
+              We're ready to answer your questions about upskilling your workforce, boosting your junior talent or putting together bespoke training plans.
+            </p>
 
-              <form className="form">
+            <form className="consultation-form">
+              <input type="text" placeholder="Your name" className="text-field" />
+              <input type="email" placeholder="Email address" className="text-field" />
+              <input type="tel" placeholder="Phone number" className="text-field" />
+              <input type="text" placeholder="Postcode" className="text-field" />
 
-                <input
-                  className="text-field w-input"
-                  placeholder="Your name"
-                  type="text"
-                  name="name"
-                />
-
-                <input
-                  className="text-field w-input"
-                  placeholder="Email address"
-                  type="email"
-                  name="email"
-                />
-
-                <input
-                  className="text-field w-input"
-                  placeholder="Phone number"
-                  type="tel"
-                  name="phone"
-                />
-
-                <input
-                  className="text-field w-input"
-                  placeholder="Postcode"
-                  type="text"
-                  name="postcode"
-                />
-
-                <button
-                  type="submit"
-                  className="button white w-button"
-                >
-                  Submit
-                </button>
-
-              </form>
-
-            </div>
+              <button className="consultation-button">
+                Submit
+              </button>
+            </form>
 
           </div>
-
         </div>
       </section>
 

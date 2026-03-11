@@ -85,19 +85,52 @@
   line-height: 1.7;
 }
 
-/* UPSKILL SECTIONS */
-.upskill-section,
-.upskill-section-two,
-.upskill-section-three,
+/* UPSKILL EMPLOYEES SECTION */
+.upskill-section {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+/* NEW ADDITIONAL UPSKILL SECTIONS */
+
+.upskill-section-two {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+.upskill-section-three {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
 .upskill-section-four {
   background: #ffffff;
   padding: 4rem 0;
 }
 
 /* GRID LAYOUTS */
-.upskill-grid,
-.upskill-grid-two,
-.upskill-grid-three,
+
+.upskill-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.upskill-grid-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.upskill-grid-three {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
 .upskill-grid-four {
   display: flex;
   align-items: center;
@@ -106,18 +139,47 @@
 }
 
 /* TEXT BLOCKS */
-.upskill-text,
-.upskill-text-two,
-.upskill-text-three,
+
+.upskill-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.upskill-text-two {
+  flex: 1;
+  max-width: 550px;
+}
+
+.upskill-text-three {
+  flex: 1;
+  max-width: 550px;
+}
+
 .upskill-text-four {
   flex: 1;
   max-width: 550px;
 }
 
 /* IMAGE WRAPPERS */
-.upskill-image-wrapper,
-.upskill-image-wrapper-two,
-.upskill-image-wrapper-three,
+
+.upskill-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upskill-image-wrapper-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upskill-image-wrapper-three {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .upskill-image-wrapper-four {
   flex: 1;
   display: flex;
@@ -143,7 +205,6 @@
   line-height: 1.6;
 }
 
-/* BLACK BUTTON */
 .black-button {
   display: inline-block;
   padding: 12px 28px;
@@ -165,63 +226,47 @@
   background: #083c4a;
 }
 
-.contact-box {
-  background-color: var(--dark-slate-blue);
-  border-radius: 10px;
-  max-width: 1200px;
-  margin-bottom: 64px;
+.consultation-wrapper {
+  max-width: 600px;
+  margin: auto;
 }
 
-.image-2 {
-  max-width: 166px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.contact-panel-h3 {
-  color: var(--white);
+.consultation-card {
+  background: #083c4a;
+  padding: 2.5rem;
+  border-radius: 12px;
   text-align: center;
-  max-width: 80%;
-  margin: 4px auto 12px;
-  font-family: Karla, sans-serif;
-  font-weight: 400;
-  line-height: 120%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.contact-panel-large-paragraph {
-  color: var(--white);
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 810px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 16px;
-  display: flex;
+.consultation-image {
+  width: 140px;
+  margin-bottom: 1.5rem;
 }
 
-.form {
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+.consultation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.consultation-text {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.consultation-form {
   display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .text-field {
-  color: #000;
-  border-radius: 5px;
-  min-height: 60px;
-  margin-bottom: 16px;
-  margin-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
 }
 
 .text-field:focus {
@@ -229,30 +274,25 @@
   border-color: #0b3f52;
 }
 
-/* CONSULTATION BUTTON */
-.consultation-button,
-.button.white {
+.consultation-button {
   margin-top: 10px;
   padding: 12px 24px;
   border-radius: 25px;
   border: none;
-  background: white;
-  color: #083c4a;
+  background: #0b3f52;
+  color: white;
   font-size: 14px;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.consultation-button:hover,
-.button.white:hover {
-  background: #e5e7eb;
-}
-
-/* OPTIONAL IMAGE CLASS */
-.the-img {
+.the-img{
   width: 100px;
   height: 100px;
+}
+
+.consultation-button:hover {
+  background: #092f3c;
 }
 
 /* TABLET STYLES */
@@ -276,6 +316,7 @@
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
+
   .hero-section2 {
     padding: 4rem 0 2.5rem 0;
   }
@@ -310,4 +351,5 @@
   .upskill-image-wrapper-four {
     justify-content: center;
   }
+
 }
