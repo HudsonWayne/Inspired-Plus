@@ -10,7 +10,7 @@ export default function About() {
         <div className="container hero-container">
 
           <div className="hero-left">
-            <h1 className="hero-title">About Key Training</h1>
+            <h1 className="hero-title">About Inspired plus</h1>
           </div>
 
           <div className="hero-right">

@@ -164,17 +164,17 @@
   justify-content: center;
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   transition: all 0.25s ease;
+  margin-left: 5px; /* spacing between arrows */
 }
 
-/* POSITION BOTTOM RIGHT */
+/* POSITION BOTTOM-RIGHT (side by side) */
 
 .swiper-button-prev {
-  right: 70px;
-  left: auto;
+  right: 60px;  /* starting point */
 }
 
 .swiper-button-next {
-  right: 10px;
+  right: 10px;  /* right next to prev */
 }
 
 /* REMOVE SWIPER DEFAULT ICON SIZE */
