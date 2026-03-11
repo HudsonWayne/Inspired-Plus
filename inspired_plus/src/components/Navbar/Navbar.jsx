@@ -4,7 +4,6 @@ import logo from "../../assets/1c8e7d523094f80430f9e85e4313312f_InspiredPlus_Log
 import "./Navbar.css";
 
 export default function Navbar() {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [employersOpen, setEmployersOpen] = useState(false);
   const [individualsOpen, setIndividualsOpen] = useState(false);
@@ -34,7 +33,6 @@ export default function Navbar() {
 
           {/* EMPLOYERS */}
           <div className="dropdown">
-
             <button
               className="dropdown-toggle"
               onClick={() => setEmployersOpen(!employersOpen)}
@@ -43,8 +41,6 @@ export default function Navbar() {
             </button>
 
             <div className={`dropdown-menu ${employersOpen ? "show" : ""}`}>
-
-              {/* Updated to React Router Link */}
               <Link to="/services">
                 <div className="menu-title">What we offer</div>
                 <div className="menu-subtext">
@@ -54,17 +50,12 @@ export default function Navbar() {
 
               <Link to="/services#upskill">
                 <div className="menu-title">Services</div>
-                
               </Link>
-
-
             </div>
-
           </div>
 
           {/* INDIVIDUALS */}
           <div className="dropdown">
-
             <button
               className="dropdown-toggle"
               onClick={() => setIndividualsOpen(!individualsOpen)}
@@ -73,18 +64,13 @@ export default function Navbar() {
             </button>
 
             <div className={`dropdown-menu ${individualsOpen ? "show" : ""}`}>
-
-
-
               <Link to="/vacancies">
                 <div className="menu-title">Vacancies</div>
-
               </Link>
-
             </div>
-
           </div>
 
+          {/* OTHER LINKS */}
           <Link to="/courses" className="nav-link">
             Courses
           </Link>
@@ -95,7 +81,6 @@ export default function Navbar() {
 
           {/* MOBILE CONTACT */}
           <div className="mobile-right">
-
             <a href="tel:+44741911375" className="call-link">
               Call us on <span>+(44)741 911 375</span>
             </a>
@@ -103,14 +88,11 @@ export default function Navbar() {
             <Link to="/contact/employer-get-in-touch" className="contact-button">
               Get in touch
             </Link>
-
           </div>
-
         </nav>
 
         {/* DESKTOP RIGHT */}
         <div className="navbar-right">
-
           <a href="tel:+44741911375" className="call-link">
             Call us on <span>+(44)741 911 375</span>
           </a>
@@ -118,7 +100,6 @@ export default function Navbar() {
           <Link to="/contact/employer-get-in-touch" className="contact-button">
             Get in touch
           </Link>
-
         </div>
 
       </div>
