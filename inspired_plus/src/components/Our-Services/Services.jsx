@@ -206,7 +206,7 @@ return ( <div className="about-page">
   </section>
 
 </div>
-```
+
 
 );
 }
