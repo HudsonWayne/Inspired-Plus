@@ -1,0 +1,118 @@
+/* GLOBAL PAGE */
+.vacancies-page {
+  font-family: 'Inter', sans-serif;
+  background: #f5f6f7;
+  color: #0b1f44;
+  line-height: 1.7;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.vacancies-header {
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.vacancies-title {
+  font-size: 36px;
+  color: #0b3f52;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.vacancies-intro {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+/* JOB CARDS */
+.vacancies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.job-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.1);
+}
+
+.job-title {
+  font-size: 24px;
+  color: #0b3f52;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.job-company,
+.job-location,
+.job-closing {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #0b1f44;
+}
+
+.job-description {
+  margin: 1rem 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+}
+
+.job-requirements {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.job-apply {
+  font-weight: 600;
+  color: #0b3f52;
+}
+
+/* BENEFITS SECTION */
+.vacancies-benefits {
+  background: #ffffff;
+  padding: 3rem 0;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.benefits-title {
+  font-size: 24px;
+  color: #0b3f52;
+  margin-bottom: 1rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* FOOTER SECTION */
+.vacancies-footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+}
