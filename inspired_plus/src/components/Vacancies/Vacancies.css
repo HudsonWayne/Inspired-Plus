@@ -1,7 +1,7 @@
-/* Vacancies.css */
+/* src/Pages/Courses.css */
 
 /* GLOBAL PAGE */
-.vacancies-page {
+.courses-page {
   font-family: 'Inter', sans-serif;
   background: #f5f6f7;
   color: #0b1f44;
@@ -17,158 +17,59 @@
   padding: 0 20px;
 }
 
-/* HEADER */
-.vacancies-header {
-  padding: 4rem 0 2rem 0;
+/* HERO / HEADER */
+.courses-header {
+  padding: 6rem 0 2rem 0;
   text-align: center;
-}
-
-.vacancies-title {
-  font-size: 40px;
-  color: #0b3f52;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.vacancies-intro {
-  font-size: 1.15rem;
-  color: #4b5563;
-  margin-bottom: 0.75rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* JOB CARDS */
-.vacancies-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* 10px gap between job cards */
-  padding: 2rem 0;
-}
-
-.job-card {
-  background: #ffffff;
-  padding: 2.5rem 2rem;
-  margin-top: 46px;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 4px solid #0b3f52;
-}
-
-.job-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.1);
-}
-
-.job-title {
-  font-size: 26px;
-  color: #0b3f52;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.job-company,
-.job-location,
-.job-closing {
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-  color: #0b1f44;
-  font-weight: 500;
-}
-
-.job-description {
-  margin: 1rem 0;
-  color: #4b5563;
-  font-size: 1.05rem;
-}
-
-.job-requirements {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 1rem;
-  color: #4b5563;
-}
-
-.job-apply {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 24px;
   background: #0b3f52;
   color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.job-apply:hover {
-  background: #092f3c;
-}
-
-/* BENEFITS SECTION */
-.vacancies-benefits {
-  background: #ffffff;
-  padding: 3rem 2rem;
   border-radius: 12px;
-  margin: 3rem 0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  text-align: center;
+  margin-bottom: 3rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.benefits-title {
-  font-size: 26px;
-  color: #0b3f52;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+.courses-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.benefits-list {
-  list-style: none;
-  padding-left: 0;
-  color: #4b5563;
-  font-size: 1.05rem;
-  line-height: 1.8;
+.courses-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
 }
 
-.benefits-list li {
-  margin-bottom: 0.8rem;
-  position: relative;
-  padding-left: 25px;
-}
-
-.benefits-list li::before {
-  content: '✔';
-  position: absolute;
-  left: 0;
-  color: #0b3f52;
-  font-weight: bold;
-}
-
-/* FOOTER SECTION */
-.vacancies-footer {
-  text-align: center;
+/* INTRODUCTION */
+.courses-intro {
   padding: 2rem 0;
+  text-align: left;
+}
+
+.courses-intro p {
+  font-size: 1.1rem;
   color: #4b5563;
-  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .vacancies-title {
+  .courses-header {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+
+  .courses-title {
     font-size: 32px;
   }
 
-  .job-card {
-    padding: 2rem 1.5rem;
+  .courses-subtitle {
+    font-size: 1.05rem;
   }
 
-  .job-apply {
-    padding: 8px 20px;
-  }
-
-  .vacancies-benefits {
-    padding: 2rem 1.5rem;
+  .courses-intro p {
+    font-size: 1rem;
   }
 }
