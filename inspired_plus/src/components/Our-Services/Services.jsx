@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+// ✅ Correct import for Vite Swiper 10+
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -246,7 +247,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }
