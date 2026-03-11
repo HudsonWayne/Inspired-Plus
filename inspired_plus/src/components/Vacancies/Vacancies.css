@@ -1,3 +1,5 @@
+/* Vacancies.css */
+
 /* GLOBAL PAGE */
 .vacancies-page {
   font-family: 'Inter', sans-serif;
@@ -41,7 +43,7 @@
 .vacancies-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 10px; /* 10px gap between job cards */
   padding: 2rem 0;
 }
 

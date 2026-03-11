@@ -1,3 +1,4 @@
+// Vacancies.jsx
 import React from "react";
 import "./Vacancies.css";
 
@@ -122,7 +123,10 @@ export default function Vacancies() {
       {/* STAY UPDATED */}
       <section className="vacancies-footer">
         <div className="container">
-          <p>Follow our vacancy page to receive updates on new job opportunities posted weekly across the UK.</p>
+          <p>
+            Follow our vacancy page to receive updates on new job opportunities
+            posted weekly across the UK.
+          </p>
         </div>
       </section>
     </div>
