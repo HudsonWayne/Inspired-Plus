@@ -53,25 +53,10 @@ export default function Navbar() {
               </Link>
 
               <Link to="/services#upskill">
-                <div className="menu-title">Upskill your employees</div>
-                <div className="menu-subtext">
-                  Train your existing workforce
-                </div>
+                <div className="menu-title">Services</div>
+                
               </Link>
 
-              <Link to="/services#hire">
-                <div className="menu-title">Hire an apprentice</div>
-                <div className="menu-subtext">
-                  Build junior talent
-                </div>
-              </Link>
-
-              <Link to="/services#training">
-                <div className="menu-title">Training courses</div>
-                <div className="menu-subtext">
-                  See our wide range of courses
-                </div>
-              </Link>
 
             </div>
 
