@@ -81,6 +81,17 @@ export default function Services() {
       <section className="upskill-section-two">
         <div className="container upskill-grid-two">
 
+
+          <div className="upskill-image-wrapper-two">
+            <img
+              src="/person-working.png"
+              alt="Leadership Training"
+              className="upskill-image"
+            />
+          </div>
+
+
+
           <div className="upskill-text-two">
             <h2 className="content-teaser-heading-two">
               Develop leadership skills within your workforce
@@ -95,15 +106,6 @@ export default function Services() {
               Find out more
             </Link>
           </div>
-
-          <div className="upskill-image-wrapper-two">
-            <img
-              src="/person-working.png"
-              alt="Leadership Training"
-              className="upskill-image"
-            />
-          </div>
-
         </div>
       </section>
 
