@@ -83,16 +83,9 @@
   line-height: 1.7;
 }
 
-/* COURSE DETAILS CARDS */
+/* COURSE CARDS */
 .course-details-section {
-  background: #ffffff;
   padding: 4rem 0;
-}
-
-.course-details-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
 }
 
 .course-card {
@@ -108,7 +101,6 @@
   box-shadow: 0 12px 24px rgba(0,0,0,0.08);
 }
 
-.course-card h2,
 .course-card h3 {
   color: #0b3f52;
   margin-bottom: 1rem;
@@ -313,8 +305,7 @@
   .upskill-grid,
   .upskill-grid-two,
   .upskill-grid-three,
-  .upskill-grid-four,
-  .course-details-container {
+  .upskill-grid-four {
     flex-direction: column;
     text-align: center;
   }
