@@ -74,12 +74,7 @@ export default function Navbar() {
 
             <div className={`dropdown-menu ${individualsOpen ? "show" : ""}`}>
 
-              <Link to="/apprenticeships">
-                <div className="menu-title">Apprenticeships</div>
-                <div className="menu-subtext">
-                  Kickstart your career
-                </div>
-              </Link>
+
 
               <Link to="/vacancies">
                 <div className="menu-title">Vacancies</div>

@@ -98,6 +98,7 @@ export default function Services() {
         </div>
       </section>
 
+
       {/* CAROUSEL */}
       <section className="course-details-section">
         <div className="container">
@@ -146,11 +147,9 @@ export default function Services() {
 
             </Swiper>
 
-            {/* NAVIGATION ARROWS WRAPPED TOGETHER */}
-            <div className="custom-arrow-wrapper">
-              <div className="swiper-button-prev custom-arrow"></div>
-              <div className="swiper-button-next custom-arrow"></div>
-            </div>
+            {/* NAVIGATION ARROWS */}
+            <div className="swiper-button-prev custom-arrow"></div>
+            <div className="swiper-button-next custom-arrow"></div>
 
           </div>
 
