@@ -47,6 +47,63 @@ export default function Services() {
         </div>
       </section>
 
+      {/* COURSE DETAILS SECTION */}
+      <section className="course-details-section">
+        <div className="container course-details-container">
+
+          <h2 className="content-teaser-heading-two">Course Overview</h2>
+          <p className="paragraph">
+            This qualification is designed for professionals working in residential childcare who want to progress into leadership and management roles. It replaces previous NVQ and QCF qualifications and is fully aligned with RQF standards.
+          </p>
+
+          <h3 className="content-teaser-heading-two">What the Course Covers</h3>
+          <ul className="paragraph">
+            <li>Safeguarding and child protection</li>
+            <li>Equality, diversity, and inclusion</li>
+            <li>Managing residential childcare teams</li>
+            <li>Health, safety, and risk management</li>
+            <li>Quality improvement</li>
+            <li>Supporting children who have experienced harm or abuse</li>
+            <li>Communication and information management</li>
+            <li>Child and young people’s development</li>
+            <li>Partnership working</li>
+          </ul>
+
+          <h3 className="content-teaser-heading-two">Delivery Method</h3>
+          <ul className="paragraph">
+            <li>100 percent online learning</li>
+            <li>Access to an ePortfolio platform</li>
+            <li>Dedicated assessor support</li>
+            <li>Email support</li>
+            <li>Workplace observation via online system</li>
+            <li>Flexible completion within 7–15 months</li>
+          </ul>
+
+          <h3 className="content-teaser-heading-two">Assessment Methods</h3>
+          <ul className="paragraph">
+            <li>Portfolio of evidence</li>
+            <li>Written assignments</li>
+            <li>Practical demonstrations</li>
+            <li>Workplace observations</li>
+            <li>Professional discussions</li>
+          </ul>
+
+          <h3 className="content-teaser-heading-two">Entry Requirements</h3>
+          <ul className="paragraph">
+            <li>Minimum age of 19</li>
+            <li>Currently working in a relevant residential childcare role</li>
+            <li>Access to a laptop or computer</li>
+            <li>Level 3 qualification in a related area preferred</li>
+          </ul>
+
+          <h3 className="content-teaser-heading-two">Course Fee</h3>
+          <p className="paragraph">
+            £1,850 per year. The fee includes full access to learning materials, assessor support, career guidance, and additional support services.
+          </p>
+
+        </div>
+      </section>
+
       {/* UPSKILL SECTION 1 */}
       <section className="upskill-section">
         <div className="container upskill-grid">
@@ -153,11 +210,6 @@ export default function Services() {
 
             <p className="consultation-text">
               Speak with our team to tailor a program for your business.
-            </p>
-
-            {/* NEW ADDED INFO */}
-            <p className="consultation-text">
-              We're ready to answer your questions about upskilling your workforce, boosting your junior talent or putting together bespoke training plans.
             </p>
 
             <form className="consultation-form">
