@@ -50,6 +50,7 @@
 .job-card {
   background: #ffffff;
   padding: 2.5rem 2rem;
+  margin-top: 46px;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
