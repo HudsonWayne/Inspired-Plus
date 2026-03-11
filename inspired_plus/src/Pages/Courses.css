@@ -1,0 +1,75 @@
+/* src/Pages/Courses.css */
+
+/* GLOBAL PAGE */
+.courses-page {
+  font-family: 'Inter', sans-serif;
+  background: #f5f6f7;
+  color: #0b1f44;
+  line-height: 1.7;
+  padding-bottom: 4rem;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HERO / HEADER */
+.courses-header {
+  padding: 6rem 0 2rem 0;
+  text-align: center;
+  background: #0b3f52;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.courses-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.courses-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* INTRODUCTION */
+.courses-intro {
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.courses-intro p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .courses-header {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+
+  .courses-title {
+    font-size: 32px;
+  }
+
+  .courses-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .courses-intro p {
+    font-size: 1rem;
+  }
+}
