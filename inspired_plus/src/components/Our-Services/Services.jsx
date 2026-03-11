@@ -12,7 +12,7 @@ export default function Services() {
 
           <div className="hero-left">
             <h1 className="hero-title">
-              Level 5 Diploma in Leadership & Management for Residential Childcare
+              Level 5 Diploma in Leadership & Management for Residential Childcare.
             </h1>
 
             <Link
@@ -39,11 +39,10 @@ export default function Services() {
       <section className="central-paragraph-section">
         <div className="container paragraph-container">
           <p className="central-paragraph-large">
-            This Level 5 Diploma is designed for professionals working in residential childcare
-            who want to progress into leadership and management roles. The qualification replaces
-            previous NVQ and QCF qualifications and is fully aligned with RQF standards, ensuring
-            learners gain the modern knowledge and leadership capabilities required within the
-            residential childcare sector.
+            Key Training provides a range of leadership, management, and apprenticeship solutions
+            designed to help your business grow, upskill your workforce, and nurture junior talent.
+            <br /><br />
+            Our tailored programs meet industry standards and help your team excel.
           </p>
         </div>
       </section>
@@ -54,15 +53,12 @@ export default function Services() {
 
           <div className="upskill-text">
             <h2 className="content-teaser-heading-two">
-              Course Overview
+              Upskill existing employees with Adult Apprenticeships
             </h2>
 
             <p className="paragraph">
-              This qualification prepares professionals to lead residential childcare teams,
-              manage operational responsibilities, and ensure children receive safe,
-              supportive and structured care environments. The program equips learners with
-              advanced leadership skills, safeguarding knowledge and management practices
-              necessary for modern residential childcare settings.
+              At Key Training, we help you unlock government funding to grow your business,
+              improve productivity and boost employee morale.
             </p>
 
             <Link to="/employer/train-your-employees" className="black-button w-button">
@@ -85,6 +81,7 @@ export default function Services() {
       <section className="upskill-section-two">
         <div className="container upskill-grid-two">
 
+
           <div className="upskill-image-wrapper-two">
             <img
               src="/person-working.png"
@@ -93,18 +90,16 @@ export default function Services() {
             />
           </div>
 
+
+
           <div className="upskill-text-two">
             <h2 className="content-teaser-heading-two">
-              What the Course Covers
+              Develop leadership skills within your workforce
             </h2>
 
             <p className="paragraph">
-              The course covers key leadership and operational areas including safeguarding
-              and child protection, equality, diversity and inclusion, managing residential
-              childcare teams, health and safety management, and quality improvement.
-              Learners will also study communication and information management, child
-              development, partnership working, and strategies for supporting children
-              who have experienced harm or abuse.
+              Our leadership programs are designed to empower your managers
+              with practical tools and strategies to guide teams effectively.
             </p>
 
             <Link to="/employer/train-your-employees" className="black-button w-button">
@@ -120,16 +115,12 @@ export default function Services() {
 
           <div className="upskill-text-three">
             <h2 className="content-teaser-heading-two">
-              Delivery & Assessment
+              Build future talent with apprenticeships
             </h2>
 
             <p className="paragraph">
-              The course is delivered through 100 percent online learning with access to
-              an ePortfolio platform and dedicated assessor support. Learners receive
-              email support and complete workplace observation through an online system.
-              The qualification can typically be completed within 7–15 months.
-              Assessment includes a portfolio of evidence, written assignments,
-              practical demonstrations, workplace observations and professional discussions.
+              Apprenticeships allow businesses to develop skilled employees
+              while benefiting from structured training and government support.
             </p>
 
             <Link to="/employer/train-your-employees" className="black-button w-button">
@@ -148,40 +139,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* UPSKILL SECTION 4 */}
-      <section className="upskill-section-four">
-        <div className="container upskill-grid-four">
-
-          <div className="upskill-image-wrapper-four">
-            <img
-              src="/person-working.png"
-              alt="Entry Requirements"
-              className="upskill-image"
-            />
-          </div>
-
-          <div className="upskill-text-four">
-            <h2 className="content-teaser-heading-two">
-              Entry Requirements & Course Fee
-            </h2>
-
-            <p className="paragraph">
-              Learners must be at least 19 years old and currently working in a relevant
-              residential childcare role. Access to a laptop or computer is required
-              for online learning. A Level 3 qualification in a related area is preferred
-              but not always mandatory depending on experience.
-              <br /><br />
-              The course fee is £1,850 per year and includes full access to learning
-              materials, assessor support, career guidance and additional support services.
-            </p>
-
-            <Link to="/employer/train-your-employees" className="black-button w-button">
-              Find out more
-            </Link>
-          </div>
-
-        </div>
-      </section>
 
 
       {/* CONSULTATION CARD */}
@@ -200,8 +157,7 @@ export default function Services() {
             </h3>
 
             <p className="consultation-text">
-              Speak with our team to discuss enrollment, course details,
-              or how this qualification can support your career progression.
+              Speak with our team to tailor a program for your business.
             </p>
 
             <form className="consultation-form">
