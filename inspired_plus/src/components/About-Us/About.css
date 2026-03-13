@@ -22,49 +22,34 @@
   align-items: center;
   background: #0b3f52;
   color: white;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem; /* increased padding for a clean hero */
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center; /* center content */
 }
 
 .hero-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 900px;
   width: 100%;
 }
 
-.hero-left {
-  flex: 1;
-  min-width: 280px;
-  margin-bottom: 2rem;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 
 .hero-subtitle {
-  font-size: 20px;
-  max-width: 500px;
+  font-size: 18px;
   line-height: 1.7;
-}
-
-/* HERO RIGHT */
-.hero-right {
-  flex: 1;
-  min-width: 280px;
-  text-align: center;
-}
-
-.hero-graphic {
-  max-width: 100%;
-  height: auto;
+  color: #e0f0f6;
 }
 
 /* CENTRAL PARAGRAPH */
@@ -221,16 +206,16 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .hero-title { font-size: 42px; }
-  .hero-subtitle { font-size: 18px; }
+  .hero-title { font-size: 36px; }
+  .hero-subtitle { font-size: 16px; }
   .who-we-are h2 { font-size: 28px; }
   .circle1 { width: 380px; height: 380px; right: -100px; top: -60px; }
   .circle2 { width: 200px; height: 200px; right: 60px; }
 }
 
 @media (max-width: 768px) {
-  .hero-title { font-size: 34px; }
-  .hero-subtitle { font-size: 16px; }
+  .hero-title { font-size: 30px; }
+  .hero-subtitle { font-size: 14px; }
   .central-paragraph p { font-size: 1.05rem; }
   .who-we-are h2 { font-size: 24px; }
   .who-we-are p { font-size: 1rem; }
@@ -243,8 +228,8 @@
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 28px; }
-  .hero-subtitle { font-size: 14px; }
+  .hero-title { font-size: 26px; }
+  .hero-subtitle { font-size: 13px; }
   .central-paragraph p { font-size: 0.95rem; }
   .who-we-are h2 { font-size: 20px; }
   .who-we-are p { font-size: 0.95rem; }
