@@ -8,13 +8,18 @@ export default function Navbar() {
   const [employersOpen, setEmployersOpen] = useState(false);
   const [individualsOpen, setIndividualsOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setEmployersOpen(false);
+    setIndividualsOpen(false);
+  };
+
   return (
     <header className="navbar">
-
       <div className="navbar-container">
-
+        
         {/* LOGO */}
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={logo} alt="Company Logo" />
         </Link>
 
@@ -30,52 +35,70 @@ export default function Navbar() {
 
         {/* NAVIGATION */}
         <nav className={`navbar-nav ${menuOpen ? "active" : ""}`}>
-
+          
           {/* EMPLOYERS */}
-          <div className="dropdown">
+          <div
+            className="dropdown"
+            onMouseEnter={() => window.innerWidth > 900 && setEmployersOpen(true)}
+            onMouseLeave={() => window.innerWidth > 900 && setEmployersOpen(false)}
+          >
             <button
               className="dropdown-toggle"
-              onClick={() => setEmployersOpen(!employersOpen)}
+              onClick={() =>
+                window.innerWidth <= 900 &&
+                setEmployersOpen(!employersOpen)
+              }
             >
               Employers
             </button>
 
             <div className={`dropdown-menu ${employersOpen ? "show" : ""}`}>
-              <Link to="/services">
+              <Link to="/services" onClick={closeMenu}>
                 <div className="menu-title">What we offer</div>
                 <div className="menu-subtext">
                   Find out more about how we can help your business
                 </div>
               </Link>
 
-              <Link to="/services#upskill">
+              <Link to="/services#upskill" onClick={closeMenu}>
                 <div className="menu-title">Services</div>
               </Link>
             </div>
           </div>
 
           {/* INDIVIDUALS */}
-          <div className="dropdown">
+          <div
+            className="dropdown"
+            onMouseEnter={() =>
+              window.innerWidth > 900 && setIndividualsOpen(true)
+            }
+            onMouseLeave={() =>
+              window.innerWidth > 900 && setIndividualsOpen(false)
+            }
+          >
             <button
               className="dropdown-toggle"
-              onClick={() => setIndividualsOpen(!individualsOpen)}
+              onClick={() =>
+                window.innerWidth <= 900 &&
+                setIndividualsOpen(!individualsOpen)
+              }
             >
               Individuals
             </button>
 
             <div className={`dropdown-menu ${individualsOpen ? "show" : ""}`}>
-              <Link to="/vacancies">
+              <Link to="/vacancies" onClick={closeMenu}>
                 <div className="menu-title">Vacancies</div>
               </Link>
             </div>
           </div>
 
           {/* OTHER LINKS */}
-          <Link to="/courses" className="nav-link">
+          <Link to="/courses" className="nav-link" onClick={closeMenu}>
             Courses
           </Link>
 
-          <Link to="/about" className="nav-link">
+          <Link to="/about" className="nav-link" onClick={closeMenu}>
             About Us
           </Link>
 
@@ -85,7 +108,11 @@ export default function Navbar() {
               Call us on <span>+(44)741 911 375</span>
             </a>
 
-            <Link to="/contact/employer-get-in-touch" className="contact-button">
+            <Link
+              to="/contact/employer-get-in-touch"
+              className="contact-button"
+              onClick={closeMenu}
+            >
               Get in touch
             </Link>
           </div>
@@ -97,13 +124,14 @@ export default function Navbar() {
             Call us on <span>+(44)741 911 375</span>
           </a>
 
-          <Link to="/contact/employer-get-in-touch" className="contact-button">
+          <Link
+            to="/contact/employer-get-in-touch"
+            className="contact-button"
+          >
             Get in touch
           </Link>
         </div>
-
       </div>
-
     </header>
   );
 }
