@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./TestimonialSlider.css";
 
 const testimonials = [
@@ -30,9 +30,33 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(3);
+  const [cardWidth, setCardWidth] = useState(340);
+  const wrapperRef = useRef();
+
+  // Update cards per view and card width based on screen size
+  useEffect(() => {
+    const updateLayout = () => {
+      const width = window.innerWidth;
+
+      let perView = 3;
+      if (width >= 1100) perView = 3;
+      else if (width >= 768) perView = 2;
+      else perView = 1;
+      setCardsPerView(perView);
+
+      if (wrapperRef.current) {
+        setCardWidth(wrapperRef.current.offsetWidth / perView - 30); // 30px gap
+      }
+    };
+
+    updateLayout();
+    window.addEventListener("resize", updateLayout);
+    return () => window.removeEventListener("resize", updateLayout);
+  }, []);
 
   const nextSlide = () => {
-    if (index < testimonials.length - 3) {
+    if (index < testimonials.length - cardsPerView) {
       setIndex(index + 1);
     }
   };
@@ -45,7 +69,6 @@ export default function TestimonialSlider() {
 
   return (
     <section className="testimonial-section">
-
       {/* Decorative shapes */}
       <div className="shape-container">
         <div className="pink-shape"></div>
@@ -54,18 +77,20 @@ export default function TestimonialSlider() {
 
       <h2 className="testimonial-title">Working with Key Training</h2>
 
-      <div className="slider-wrapper">
-
+      <div className="slider-wrapper" ref={wrapperRef}>
         <div
           className="slider-track"
-          style={{ transform: `translateX(-${index * 340}px)` }}
+          style={{ transform: `translateX(-${index * (cardWidth + 30)}px)` }}
         >
           {testimonials.map((item, i) => (
-            <div className="testimonial-card" key={i}>
+            <div
+              className="testimonial-card"
+              key={i}
+              style={{ minWidth: cardWidth }}
+            >
               <p className="testimonial-text">
                 <em>{item.text}</em>
               </p>
-
               <div className="testimonial-info">
                 <p className="name">{item.name}</p>
                 <p>{item.course}</p>
@@ -74,14 +99,12 @@ export default function TestimonialSlider() {
             </div>
           ))}
         </div>
-
       </div>
 
       <div className="slider-buttons">
         <button onClick={prevSlide}>←</button>
         <button onClick={nextSlide}>→</button>
       </div>
-
     </section>
   );
 }
