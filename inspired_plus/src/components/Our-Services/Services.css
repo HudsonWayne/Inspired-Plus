@@ -1,5 +1,4 @@
 /* GLOBAL PAGE */
-
 .about-page {
   font-family: 'Inter', sans-serif;
   background: #f5f6f7;
@@ -8,7 +7,6 @@
 }
 
 /* CONTAINER */
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -18,7 +16,6 @@
 }
 
 /* HERO SECTION */
-
 .hero-section2 {
   background: #0b3f52;
   padding: 6rem 0 4rem 0;
@@ -53,7 +50,6 @@
 }
 
 /* HERO BUTTON */
-
 .navigation-white-button {
   display: inline-block;
   padding: 12px 28px;
@@ -70,50 +66,25 @@
   background-color: #e1e5ea;
 }
 
-/* CENTRAL PARAGRAPH */
-
-.central-paragraph-section {
-  padding: 3rem 0;
-  text-align: center;
-}
-
-.paragraph-container {
-  max-width: 900px;
-  margin: auto;
-}
-
-.central-paragraph-large {
-  font-size: 1.25rem;
-  color: #4b5563;
-  line-height: 1.7;
-}
-
-/* COURSE SECTION */
-
+/* CAROUSEL */
 .course-details-section {
   padding: 5rem 0;
 }
-
-/* CAROUSEL WRAPPER */
 
 .carousel-wrapper {
   position: relative;
 }
 
 /* SWIPER */
-
 .swiper {
   padding-bottom: 70px;
 }
-
-/* FORCE EQUAL HEIGHT SLIDES */
 
 .swiper-slide {
   display: flex;
 }
 
 /* COURSE CARD */
-
 .course-card {
   background: #ffffff;
   padding: 2rem;
@@ -149,33 +120,7 @@
   color: #4b5563;
 }
 
-/* NAVIGATION ARROWS */
-
-.custom-arrow-wrapper {
-  position: absolute;
-  bottom: -10px; /* slightly below cards */
-  right: 0;
-  display: flex;
-  gap: 10px; /* space between arrows */
-}
-
-.custom-arrow {
-  width: auto;
-  height: auto;
-  background: none; /* removed circle */
-  border-radius: 0;
-  color: #0b3f52;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  padding: 4px 8px;
-}
-
-/* REMOVE SWIPER DEFAULT ICON SIZE */
-
+/* SWIPER NAVIGATION */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 22px;
@@ -183,171 +128,30 @@
   color: #0b3f52;
 }
 
-/* HOVER EFFECT */
-
+/* CUSTOM ARROW HOVER */
 .custom-arrow:hover {
   color: #092f3c;
   transform: translateY(-2px);
 }
 
-/* UPSKILL SECTIONS */
-
-.upskill-section,
-.upskill-section-two,
-.upskill-section-three,
-.upskill-section-four {
-  background: #ffffff;
-  padding: 4rem 0;
+/* RESPONSIVE HERO AND CARDS */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 38px;
+  }
 }
 
-.upskill-grid,
-.upskill-grid-two,
-.upskill-grid-three,
-.upskill-grid-four {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.upskill-text,
-.upskill-text-two,
-.upskill-text-three,
-.upskill-text-four {
-  flex: 1;
-  max-width: 550px;
-}
+  .hero-title {
+    font-size: 28px;
+  }
 
-.upskill-image-wrapper,
-.upskill-image-wrapper-two,
-.upskill-image-wrapper-three,
-.upskill-image-wrapper-four {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.upskill-image {
-  max-width: 520px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.content-teaser-heading-two {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.paragraph {
-  font-size: 1.1rem;
-  color: #4b5563;
-  margin-bottom: 1.5rem;
-}
-
-/* BUTTON */
-
-.black-button {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 30px;
-  background-color: #0b3f52;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.black-button:hover {
-  background: #092f3c;
-}
-
-/* CONSULTATION */
-
-.consultation-section {
-  padding: 5rem 20px;
-  background: #083c4a;
-}
-
-.consultation-wrapper {
-  max-width: 600px;
-  margin: auto;
-}
-
-.consultation-card {
-  background: #083c4a;
-  padding: 2.5rem;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.consultation-image {
-  width: 140px;
-  margin-bottom: 1.5rem;
-}
-
-.consultation-title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.consultation-text {
-  color: white;
-  margin-bottom: 25px;
-}
-
-.consultation-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.text-field {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-}
-
-.consultation-button {
-  margin-top: 10px;
-  padding: 12px 24px;
-  border-radius: 25px;
-  border: none;
-  background: #0b3f52;
-  color: white;
-}
-
-/* TABLET */
-
-@media (min-width:768px){
-
-.hero-container{
-flex-direction:row;
-justify-content:space-between;
-align-items:center;
-}
-
-.hero-left{
-text-align:left;
-flex:1;
-}
-
-.hero-right{
-flex:1;
-text-align:right;
-}
-
-}
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-.hero-title{
-font-size:32px;
-}
-
-.swiper{
-padding-bottom:90px;
-}
+  .swiper {
+    padding-bottom: 90px;
+  }
 }

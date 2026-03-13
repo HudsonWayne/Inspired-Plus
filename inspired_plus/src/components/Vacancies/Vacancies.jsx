@@ -1,4 +1,3 @@
-// Vacancies.jsx
 import React from "react";
 import "./Vacancies.css";
 
@@ -64,15 +63,14 @@ export default function Vacancies() {
 
   return (
     <div className="vacancies-page">
+      
       {/* HEADER */}
       <section className="vacancies-header">
         <div className="container">
           <h1 className="vacancies-title">Latest Job Vacancies</h1>
           <p className="vacancies-intro">
             Welcome to our Vacancy Page, where we post the latest job
-            opportunities available across the United Kingdom. We aim to help
-            job seekers stay informed about new job openings and find employment
-            opportunities that match their skills and experience.
+            opportunities available across the United Kingdom. Stay informed and find the right role for your skills.
           </p>
           <p className="vacancies-intro">
             Check this page regularly for new vacancies.
@@ -86,15 +84,9 @@ export default function Vacancies() {
           {jobs.map((job, idx) => (
             <div key={idx} className="job-card">
               <h2 className="job-title">{job.title}</h2>
-              <p className="job-company">
-                <strong>Company:</strong> {job.company}
-              </p>
-              <p className="job-location">
-                <strong>Location:</strong> {job.location}
-              </p>
-              <p className="job-closing">
-                <strong>Closing Date:</strong> {job.closingDate}
-              </p>
+              <p className="job-company"><strong>Company:</strong> {job.company}</p>
+              <p className="job-location"><strong>Location:</strong> {job.location}</p>
+              <p className="job-closing"><strong>Closing Date:</strong> {job.closingDate}</p>
               <p className="job-description">{job.description}</p>
               <ul className="job-requirements">
                 {job.requirements.map((req, i) => (
@@ -107,28 +99,28 @@ export default function Vacancies() {
         </div>
       </section>
 
-      {/* WHY USE THIS PAGE */}
+      {/* BENEFITS */}
       <section className="vacancies-benefits">
         <div className="container">
           <h2 className="benefits-title">Why Use Our Vacancy Page</h2>
           <ul className="benefits-list">
-            <li>✔ Regularly updated job listings</li>
-            <li>✔ Opportunities across the UK</li>
-            <li>✔ Easy application process</li>
-            <li>✔ Jobs in different industries</li>
+            <li>Regularly updated job listings</li>
+            <li>Opportunities across the UK</li>
+            <li>Easy application process</li>
+            <li>Jobs in different industries</li>
           </ul>
         </div>
       </section>
 
-      {/* STAY UPDATED */}
+      {/* FOOTER */}
       <section className="vacancies-footer">
         <div className="container">
           <p>
-            Follow our vacancy page to receive updates on new job opportunities
-            posted weekly across the UK.
+            Follow our vacancy page to receive updates on new job opportunities posted weekly across the UK.
           </p>
         </div>
       </section>
+
     </div>
   );
 }

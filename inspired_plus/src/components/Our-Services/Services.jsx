@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function Services() {
-
   const courses = [
     {
       title: "Course Overview",
@@ -24,10 +23,6 @@ export default function Services() {
         "Managing residential childcare teams",
         "Health, safety, and risk management",
         "Quality improvement",
-        // "Supporting children who have experienced harm or abuse",
-        // "Communication and information management",
-        // "Child and young people’s development",
-        // "Partnership working",
       ],
     },
     {
@@ -98,7 +93,6 @@ export default function Services() {
         </div>
       </section>
 
-
       {/* CAROUSEL */}
       <section className="course-details-section">
         <div className="container">
@@ -114,16 +108,14 @@ export default function Services() {
                 prevEl: ".swiper-button-prev",
               }}
               breakpoints={{
-                0: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
+                0: { slidesPerView: 1, spaceBetween: 20 },
+                768: { slidesPerView: 2, spaceBetween: 30 },
+                1024: { slidesPerView: 2, spaceBetween: 30 },
               }}
             >
-
               {courses.map((course, index) => (
                 <SwiperSlide key={index}>
-
                   <div className="course-card">
-
                     <h3 className="content-teaser-heading-two">
                       {course.title}
                     </h3>
@@ -139,9 +131,7 @@ export default function Services() {
                         ))}
                       </ul>
                     )}
-
                   </div>
-
                 </SwiperSlide>
               ))}
 
@@ -152,7 +142,6 @@ export default function Services() {
             <div className="swiper-button-next custom-arrow"></div>
 
           </div>
-
         </div>
       </section>
 
