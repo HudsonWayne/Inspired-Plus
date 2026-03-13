@@ -8,7 +8,7 @@ export default function About() {
       {/* HERO SECTION */}
       <section className="hero-section">
         <div className="hero-container">
-          <div className="hero-left">
+          <div className="hero-content">
             <h1 className="hero-title">
               About Inspired Plus
             </h1>
@@ -17,13 +17,6 @@ export default function About() {
               in residential childcare, helping individuals and organisations grow effectively.
             </p>
           </div>
-          {/* <div className="hero-right">
-            <img
-              src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/62ebc9dde0329f7397590768_Graphic.svg"
-              alt="Hero Graphic"
-              className="hero-graphic"
-            />
-          </div> */}
         </div>
       </section>
 
