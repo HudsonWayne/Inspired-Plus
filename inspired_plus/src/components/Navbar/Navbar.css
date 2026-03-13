@@ -87,6 +87,14 @@
   cursor: pointer;
 }
 
+/* DESKTOP HOVER */
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* MENU */
+
 .dropdown-menu {
   position: absolute;
   top: 120%;
@@ -175,7 +183,11 @@
     display: flex;
   }
 
-  /* CRITICAL FIX FOR MOBILE DROPDOWN */
+  /* disable hover dropdown on mobile */
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
 
   .dropdown-menu {
     position: relative;
