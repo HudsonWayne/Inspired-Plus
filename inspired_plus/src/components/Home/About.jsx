@@ -1,62 +1,125 @@
-import "../../components/Home/About.css";
+import React from "react";
+import "./About.css";
 
-function About() {
+export default function About() {
   return (
-    <section className="about-section">
-      <div className="about-container">
+    <div className="about-page">
 
-        {/* LEFT CONTENT */}
-        <div className="about-left">
-          <h2 className="about-heading">
-            We've helped businesses for over 55 years with market leading
-            learning and development solutions.
-          </h2>
+      {/* HERO */}
+      <section className="hero-section2">
+        <div className="container hero-container">
 
-          <p className="about-text">
-            Employers can upskill their workforce, recruit an apprentice or opt
-            for tailored fully flexible online solutions to meet your
-            organisation's needs.
-          </p>
-
-          <p className="about-text">
-            Individuals can access a wide range of flexible online courses.
-            Apply for vacancies to progress onto employment with a suitable
-            apprenticeship learning pathway.
-          </p>
-
-          <p className="about-text">
-            Our specialists will identify areas to reskill employees and guide
-            you on utilising your levy fund.
-          </p>
-
-          <a href="/contact" className="about-button">
-            Get in touch
-          </a>
-        </div>
-
-        {/* RIGHT TIMELINE / STATS */}
-        <div className="about-right">
-
-          <div className="stat-card">
-            <h3 className="stat-number">91%</h3>
-            <p className="stat-text">learner satisfaction</p>
+          <div className="hero-left">
+            <h1 className="hero-title">About Inspired Plus</h1>
           </div>
 
-          <div className="stat-card">
-            <h3 className="stat-number">Grade 2</h3>
-            <p className="stat-text">Ofsted provider</p>
-          </div>
-
-          <div className="stat-card">
-            <h3 className="stat-number">168</h3>
-            <p className="stat-text">courses to choose from</p>
+          <div className="hero-right">
+            <img
+              src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/62ebc9dde0329f7397590768_Graphic.svg"
+              alt="Hero Graphic"
+              className="hero-graphic"
+            />
           </div>
 
         </div>
+      </section>
 
-      </div>
-    </section>
+      {/* CENTRAL PARAGRAPH */}
+      <section className="central-paragraph-section">
+        <div className="container paragraph-container">
+
+          <p className="central-paragraph-large">
+            Key Training, part of Teaching 4 Business, has grown to be one of the
+            largest and most successful training providers of its kind in the UK,
+            offering a broad range of training solutions to help businesses and
+            individuals grow.
+            <br /><br />
+            The success is down to the range of training solutions, bolstered with
+            dedicated tutors & coaches and a host of staff who are experienced in
+            helping businesses and individuals grow.
+          </p>
+
+        </div>
+      </section>
+
+      {/* WHO WE ARE */}
+      <section className="who-we-are-section">
+        <div className="container content-container">
+
+          <h2 className="section-title">Who We Are</h2>
+          <p className="section-text">
+            We are a professional training provider specialising in leadership and
+            management qualifications within the residential childcare sector.
+          </p>
+
+          <h2 className="section-title">Our Focus</h2>
+          <p className="section-text">
+            Our focus is to develop competent, confident leaders who can manage
+            residential childcare services safely, effectively, and in full
+            compliance with regulatory standards.
+          </p>
+
+          <h2 className="section-title">Our Mission</h2>
+          <p className="section-text">
+            To support childcare professionals in gaining recognised qualifications
+            that enhance career progression and improve outcomes for children and
+            young people.
+          </p>
+
+          <h2 className="section-title">What Makes Us Different</h2>
+
+          <ul className="difference-list">
+
+            <li><span className="bullet">✓</span> Experienced assessors</li>
+            <li><span className="bullet">✓</span> One-to-one learner support</li>
+            <li><span className="bullet">✓</span> Structured online ePortfolio system</li>
+            <li><span className="bullet">✓</span> Flexible learning approach</li>
+            <li><span className="bullet">✓</span> Career and interview preparation support</li>
+            <li><span className="bullet">✓</span> Guidance through Ofsted processes</li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      {/* CONSULTATION CARD */}
+      <section className="consultation-container">
+
+        <div className="consultation-card">
+
+          <div className="avatar-group">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Avatar" />
+            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Avatar" />
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Avatar" />
+          </div>
+
+          <h1>Book a consultation</h1>
+
+          <p className="subtitle">
+            We're ready to answer your questions about upskilling your workforce,
+            boosting your junior talent or putting together bespoke training plans.
+          </p>
+
+          <form className="consultation-form">
+
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Email address" />
+            <input type="tel" placeholder="Phone number" />
+            <input type="text" placeholder="Postcode" />
+
+            <button type="submit">Submit</button>
+
+          </form>
+
+        </div>
+
+        {/* Decorative Circles */}
+        <div className="circle circle1"></div>
+        <div className="circle circle2"></div>
+        <div className="circle circle3"></div>
+
+      </section>
+
+    </div>
   );
 }
-
-export default About;

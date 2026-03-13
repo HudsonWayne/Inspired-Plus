@@ -1,9 +1,10 @@
 /* GLOBAL PAGE */
-.about-page {
+.courses-page {
   font-family: 'Inter', sans-serif;
   background: #f5f6f7;
   color: #0b1f44;
   line-height: 1.7;
+  padding-bottom: 4rem;
 }
 
 /* CONTAINER */
@@ -14,234 +15,125 @@
   padding: 0 20px;
 }
 
-/* HERO SECTION */
-.hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* HERO / HEADER */
+.courses-header {
   background: #0b3f52;
+  padding: 6rem 0 4rem 0;
   color: white;
-  padding: 5rem 2rem;
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  flex-wrap: wrap;
+  text-align: center;
 }
 
-.hero-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.hero-left {
-  flex: 1;
-  min-width: 280px;
-}
-
-.hero-title {
-  font-size: 48px;
+.courses-title {
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.hero-subtitle {
+.courses-subtitle {
   font-size: 1.25rem;
   font-weight: 400;
-  max-width: 600px;
-  line-height: 1.6;
-  margin-top: 0.5rem;
-}
-
-.hero-right {
-  flex: 1;
-  min-width: 280px;
-  text-align: center;
-}
-
-.hero-graphic {
-  max-width: 100%;
-  height: auto;
-}
-
-/* CENTRAL PARAGRAPH */
-.central-paragraph-section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.central-paragraph {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
+  line-height: 1.6;
+  color: #e0f0f6;
+}
+
+/* INTRODUCTION */
+.courses-intro {
+  padding: 3rem 0;
+}
+
+.courses-intro p {
   font-size: 1.15rem;
   color: #4b5563;
-  line-height: 1.7;
+  margin-bottom: 1.75rem;
+  max-width: 900px;
 }
 
-/* WHO WE ARE SECTION */
-.who-we-are-section {
-  padding: 4rem 2rem;
-  background: #ffffff;
-  border-radius: 12px;
-  margin: 3rem 0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.section-title {
-  font-size: 28px;
-  color: #0b3f52;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.section-text {
-  font-size: 1.1rem;
-  color: #4b5563;
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-
-.difference-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.05rem;
-  color: #4b5563;
-}
-
-.difference-list li {
-  margin-bottom: 0.75rem;
-  position: relative;
-  padding-left: 25px;
-}
-
-.difference-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #0b3f52;
-  font-weight: bold;
-}
-
-/* CONSULTATION SECTION */
-.consultation-section {
-  padding: 5rem 2rem;
-  background: #0b3f52;
-  color: white;
-  border-radius: 12px;
+/* CTA BUTTON */
+.courses-cta {
   text-align: center;
+  margin-top: 3rem;
 }
 
-.consultation-card {
-  max-width: 600px;
-  margin: auto;
-  background: #0b3f52;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.consultation-image {
-  width: 140px;
-  margin-bottom: 1.5rem;
-}
-
-.consultation-title {
-  font-size: 24px;
-  margin-bottom: 1rem;
-}
-
-.consultation-text {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-/* FORM */
-.consultation-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.text-field {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-  font-size: 1rem;
-}
-
-.consultation-button {
-  padding: 14px;
+.cta-button {
+  display: inline-block;
+  padding: 14px 36px;
   border-radius: 25px;
-  border: none;
-  background: #f3c23c;
-  color: #0b3f52;
-  font-weight: 600;
+  background: #0b3f52;
+  color: #fff;
   font-size: 1rem;
-  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
   transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-.consultation-button:hover {
-  background: #e6b631;
+.cta-button:hover {
+  background: #092f3c;
   transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .hero-title {
+  .courses-title {
     font-size: 36px;
   }
-  .hero-subtitle {
+
+  .courses-subtitle {
     font-size: 1.15rem;
+  }
+
+  .courses-intro p {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    align-items: center;
+  .courses-header {
+    padding: 4rem 1rem 3rem 1rem;
   }
-  .hero-title {
+
+  .courses-title {
     font-size: 28px;
-    text-align: center;
   }
-  .hero-subtitle {
-    text-align: center;
+
+  .courses-subtitle {
+    font-size: 1rem;
   }
-  .central-paragraph-section {
-    padding: 3rem 1rem;
+
+  .courses-intro {
+    padding: 2rem 1rem;
   }
-  .who-we-are-section {
-    padding: 3rem 1rem;
+
+  .courses-intro p {
+    font-size: 1rem;
   }
-  .consultation-section {
-    padding: 3rem 1rem;
+
+  .cta-button {
+    padding: 12px 28px;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-title {
+  .courses-title {
     font-size: 24px;
   }
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-  .central-paragraph {
-    font-size: 1rem;
-  }
-  .section-title {
-    font-size: 22px;
-  }
-  .section-text,
-  .difference-list li,
-  .consultation-text {
+
+  .courses-subtitle {
     font-size: 0.95rem;
   }
-  .consultation-button {
+
+  .courses-intro p {
     font-size: 0.95rem;
-    padding: 12px;
+  }
+
+  .cta-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
   }
 }
