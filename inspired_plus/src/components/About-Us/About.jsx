@@ -6,11 +6,14 @@ export default function About() {
     <div className="about-page">
 
       {/* HERO */}
-      <section className="hero-section2">
+      <section className="hero-section">
         <div className="container hero-container">
 
           <div className="hero-left">
-            <h1 className="hero-title">About Inspired plus</h1>
+            <h1 className="hero-title">About Inspired Plus</h1>
+            <p className="hero-subtitle">
+              We help businesses and individuals grow with professional training solutions tailored to leadership and management in residential childcare.
+            </p>
           </div>
 
           <div className="hero-right">
@@ -27,18 +30,15 @@ export default function About() {
       {/* CENTRAL PARAGRAPH */}
       <section className="central-paragraph-section">
         <div className="container paragraph-container">
-
-          <p className="central-paragraph-large">
+          <p className="central-paragraph">
             Key Training, part of Teaching 4 Business, has grown to be one of the
             largest and most successful training providers of its kind in the UK,
             offering a broad range of training solutions to help businesses and
             individuals grow.
             <br /><br />
             The success is down to the range of training solutions, bolstered with
-            dedicated tutors & coaches and a host of staff who are experienced in
-            helping businesses and individuals grow.
+            dedicated tutors & coaches and a host of staff experienced in helping businesses and individuals thrive.
           </p>
-
         </div>
       </section>
 
@@ -67,16 +67,13 @@ export default function About() {
           </p>
 
           <h2 className="section-title">What Makes Us Different</h2>
-
           <ul className="difference-list">
-
-            <li><span className="bullet">✓</span> Experienced assessors</li>
-            <li><span className="bullet">✓</span> One-to-one learner support</li>
-            <li><span className="bullet">✓</span> Structured online ePortfolio system</li>
-            <li><span className="bullet">✓</span> Flexible learning approach</li>
-            <li><span className="bullet">✓</span> Career and interview preparation support</li>
-            <li><span className="bullet">✓</span> Guidance through Ofsted processes</li>
-
+            <li>✓ Experienced assessors</li>
+            <li>✓ One-to-one learner support</li>
+            <li>✓ Structured online ePortfolio system</li>
+            <li>✓ Flexible learning approach</li>
+            <li>✓ Career and interview preparation support</li>
+            <li>✓ Guidance through Ofsted processes</li>
           </ul>
 
         </div>
@@ -84,43 +81,27 @@ export default function About() {
 
       {/* CONSULTATION CARD */}
       <section className="consultation-section">
-
-        <div className="consultation-wrapper">
-
+        <div className="container consultation-container">
           <div className="consultation-card">
-
             <img
               src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/62e94e4fff1174ba77609a4e_Group%2032%20(1).png"
               alt="Consultation"
               className="consultation-image"
             />
-
-            <h3 className="consultation-title">
-              Book a consultation
-            </h3>
-
+            <h3 className="consultation-title">Book a Consultation</h3>
             <p className="consultation-text">
               We're ready to answer your questions about upskilling your workforce,
-              boosting your junior talent or putting together bespoke training plans.
+              boosting your junior talent, or putting together bespoke training plans.
             </p>
-
             <form className="consultation-form">
-
-              <input type="text" placeholder="Your name" className="text-field" />
-              <input type="email" placeholder="Email address" className="text-field" />
-              <input type="tel" placeholder="Phone number" className="text-field" />
+              <input type="text" placeholder="Your Name" className="text-field" />
+              <input type="email" placeholder="Email Address" className="text-field" />
+              <input type="tel" placeholder="Phone Number" className="text-field" />
               <input type="text" placeholder="Postcode" className="text-field" />
-
-              <button className="consultation-button">
-                Submit
-              </button>
-
+              <button className="consultation-button">Submit</button>
             </form>
-
           </div>
-
         </div>
-
       </section>
 
     </div>
