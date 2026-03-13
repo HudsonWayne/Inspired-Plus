@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/1c8e7d523094f80430f9e85e4313312f_InspiredPlus_LogoWeb.png";
 import "./Navbar.css";
@@ -8,15 +8,39 @@ export default function Navbar() {
   const [employersOpen, setEmployersOpen] = useState(false);
   const [individualsOpen, setIndividualsOpen] = useState(false);
 
+  const navRef = useRef();
+
   const closeMenu = () => {
     setMenuOpen(false);
     setEmployersOpen(false);
     setIndividualsOpen(false);
   };
 
+  /* Close menu when clicking outside */
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!navRef.current?.contains(event.target)) {
+        closeMenu();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  /* Close menu with ESC */
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") closeMenu();
+    };
+
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
   return (
     <header className="navbar">
-      <div className="navbar-container">
+      <div className="navbar-container" ref={navRef}>
         
         {/* LOGO */}
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
@@ -33,9 +57,9 @@ export default function Navbar() {
           <span></span>
         </div>
 
-        {/* NAVIGATION */}
+        {/* NAV LINKS */}
         <nav className={`navbar-nav ${menuOpen ? "active" : ""}`}>
-          
+
           {/* EMPLOYERS */}
           <div
             className="dropdown"
@@ -50,6 +74,7 @@ export default function Navbar() {
               }
             >
               Employers
+              <span className="arrow">{employersOpen ? "▲" : "▼"}</span>
             </button>
 
             <div className={`dropdown-menu ${employersOpen ? "show" : ""}`}>
@@ -69,12 +94,8 @@ export default function Navbar() {
           {/* INDIVIDUALS */}
           <div
             className="dropdown"
-            onMouseEnter={() =>
-              window.innerWidth > 900 && setIndividualsOpen(true)
-            }
-            onMouseLeave={() =>
-              window.innerWidth > 900 && setIndividualsOpen(false)
-            }
+            onMouseEnter={() => window.innerWidth > 900 && setIndividualsOpen(true)}
+            onMouseLeave={() => window.innerWidth > 900 && setIndividualsOpen(false)}
           >
             <button
               className="dropdown-toggle"
@@ -84,6 +105,7 @@ export default function Navbar() {
               }
             >
               Individuals
+              <span className="arrow">{individualsOpen ? "▲" : "▼"}</span>
             </button>
 
             <div className={`dropdown-menu ${individualsOpen ? "show" : ""}`}>
@@ -93,7 +115,6 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* OTHER LINKS */}
           <Link to="/courses" className="nav-link" onClick={closeMenu}>
             Courses
           </Link>
@@ -131,6 +152,7 @@ export default function Navbar() {
             Get in touch
           </Link>
         </div>
+
       </div>
     </header>
   );
