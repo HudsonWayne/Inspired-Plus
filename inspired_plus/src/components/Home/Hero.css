@@ -2,8 +2,6 @@
 
 .hero-section {
   width: 100%;
-  padding: 80px 20px;
-  background: #f8fafc;
 }
 
 /* CONTAINER */
@@ -14,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
 }
 
 /* LEFT */
@@ -26,10 +23,9 @@
 /* TITLE */
 
 .hero-title {
+  font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
-  font-size: clamp(28px, 5vw, 56px);
-  color: #033445;
 }
 
 /* RIGHT */
@@ -46,16 +42,18 @@
   height: auto;
 }
 
-/* TABLET */
+/* ============================= */
+/* RESPONSIVE ONLY BELOW HERE */
+/* Desktop styles above untouched */
+/* ============================= */
+
+
+/* Tablet */
 
 @media (max-width: 1024px) {
 
-  .hero-container {
-    gap: 30px;
-  }
-
   .hero-title {
-    font-size: clamp(26px, 5vw, 44px);
+    font-size: 44px;
   }
 
   .hero-graphic {
@@ -64,17 +62,19 @@
 
 }
 
-/* MOBILE */
+
+/* Mobile */
 
 @media (max-width: 768px) {
 
   .hero-container {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
   }
 
   .hero-title {
-    font-size: clamp(24px, 6vw, 36px);
+    font-size: 34px;
   }
 
   .hero-right {
@@ -87,16 +87,13 @@
 
 }
 
-/* SMALL PHONES */
+
+/* Small Phones */
 
 @media (max-width: 480px) {
 
-  .hero-section {
-    padding: 60px 16px;
-  }
-
   .hero-title {
-    font-size: clamp(22px, 7vw, 30px);
+    font-size: 28px;
   }
 
   .hero-graphic {
