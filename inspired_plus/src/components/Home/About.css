@@ -1,228 +1,83 @@
-/* GLOBAL PAGE */
-.about-page {
-  font-family: 'Inter', sans-serif;
+.about-section {
+  padding: 6rem 1.5rem;
   background: #f5f6f7;
-  color: #0b1f44;
-  line-height: 1.7;
 }
 
-/* CONTAINER */
-.container {
-  width: 100%;
+/* Main grid */
+.about-container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
-/* HERO SECTION */
-.hero-section2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #0b3f52;
-  color: white;
-  padding: 5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  flex-wrap: wrap;
+@media (min-width: 900px) {
+  .about-container {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
 }
 
-.hero-left {
-  flex: 1;
-  min-width: 280px;
-}
+/* LEFT CONTENT */
 
-.hero-title {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.hero-right {
-  flex: 1;
-  min-width: 280px;
-  text-align: center;
-}
-
-.hero-graphic {
-  max-width: 100%;
-  height: auto;
-}
-
-/* CENTRAL PARAGRAPH */
-.central-paragraph-section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.central-paragraph-large {
-  max-width: 900px;
-  margin: auto;
-  font-size: 1.15rem;
-  color: #4b5563;
-  line-height: 1.7;
-}
-
-/* WHO WE ARE SECTION */
-.who-we-are-section {
-  padding: 4rem 2rem;
-  background: #ffffff;
-  border-radius: 12px;
-  margin: 3rem 0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.section-title {
-  font-size: 28px;
-  color: #0b3f52;
-  margin-bottom: 1rem;
+.about-heading {
+  font-size: 2.4rem;
+  color: #0b1f44;
   font-weight: 600;
-}
-
-.section-text {
-  font-size: 1.1rem;
-  color: #4b5563;
+  line-height: 1.3;
   margin-bottom: 2rem;
-  line-height: 1.7;
 }
 
-.difference-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.05rem;
+.about-text {
   color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
 }
 
-.difference-list li {
-  margin-bottom: 0.75rem;
-  position: relative;
-  padding-left: 25px;
+/* BUTTON */
+
+.about-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.8rem;
+  border: 1px solid #0b1f44;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #0b1f44;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.difference-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #0b3f52;
-  font-weight: bold;
-}
-
-/* CONSULTATION SECTION */
-.consultation-container {
-  min-height: 100vh;
-  background: #083c4a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-}
-
-/* Decorative circles */
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  background: #2e4fa3;
-  z-index: 1;
-}
-
-.circle1 { width: 450px; height: 450px; right: -120px; top: -80px; }
-.circle2 { width: 250px; height: 250px; right: 80px; top: 220px; }
-.circle3 { width: 120px; height: 120px; right: 40px; bottom: 120px; }
-
-/* Card */
-.consultation-card {
-  text-align: center;
-  max-width: 520px;
-  width: 90%;
-  z-index: 2;
-  position: relative;
+.about-button:hover {
+  background: #0b1f44;
   color: white;
 }
 
-.avatar-group {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
+/* RIGHT STATS */
 
-.avatar-group img {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: 3px solid #083c4a;
-  margin-left: -10px;
-}
-
-.consultation-card h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #cde3ea;
-}
-
-/* Form */
-.consultation-form {
+.about-right {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.5rem;
 }
 
-.consultation-form input {
-  padding: 14px;
-  border-radius: 6px;
-  border: none;
-  background: #e6e6e6;
-  font-size: 14px;
+/* CARD */
+
+.stat-card {
+  background: #eeeeee;
+  padding: 2rem;
+  border-radius: 14px;
 }
 
-.consultation-form input:focus {
-  outline: none;
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0b1f44;
+  margin-bottom: 0.3rem;
 }
 
-.consultation-form button {
-  margin-top: 10px;
-  padding: 12px 30px;
-  border-radius: 25px;
-  border: 1px solid white;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.3s;
-  width: 160px;
-  align-self: center;
-}
-
-.consultation-form button:hover {
-  background: white;
-  color: #083c4a;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .consultation-card h1 { font-size: 28px; }
-  .circle1 { width: 380px; height: 380px; right: -100px; top: -60px; }
-  .circle2 { width: 200px; height: 200px; right: 60px; }
-}
-
-@media (max-width: 768px) {
-  .consultation-container { padding: 40px 20px; }
-  .consultation-card h1 { font-size: 26px; }
-  .subtitle { font-size: 13px; }
-  .consultation-form input { padding: 12px; }
-  .circle1 { width: 300px; height: 300px; right: -120px; top: -120px; }
-  .circle2 { width: 160px; height: 160px; right: 40px; top: 260px; }
-  .circle3 { width: 90px; height: 90px; right: 20px; bottom: 100px; }
-}
-
-@media (max-width: 480px) {
-  .consultation-card h1 { font-size: 22px; }
-  .avatar-group img { width: 45px; height: 45px; }
-  .consultation-form button { width: 140px; font-size: 14px; }
+.stat-text {
+  color: #4b5563;
+  font-size: 0.95rem;
 }
