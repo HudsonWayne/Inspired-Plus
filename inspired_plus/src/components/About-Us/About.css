@@ -1,9 +1,9 @@
 /* GLOBAL PAGE */
-.courses-page {
+.about-page {
   font-family: 'Inter', sans-serif;
   background: #f5f6f7;
   color: #0b1f44;
-  line-height: 1.7;
+  line-height: 1.8;
   padding-bottom: 4rem;
 }
 
@@ -15,125 +15,240 @@
   padding: 0 20px;
 }
 
-/* HERO / HEADER */
-.courses-header {
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #0b3f52;
-  padding: 6rem 0 4rem 0;
   color: white;
+  padding: 6rem 2rem;
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 1.7;
+}
+
+/* HERO RIGHT */
+.hero-right {
+  flex: 1;
+  min-width: 280px;
   text-align: center;
 }
 
-.courses-title {
-  font-size: 42px;
-  font-weight: 700;
+.hero-graphic {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CENTRAL PARAGRAPH */
+.central-paragraph {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.central-paragraph p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #4b5563;
+  line-height: 1.9;
+}
+
+/* WHO WE ARE */
+.who-we-are {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 3rem 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.who-we-are h2 {
+  font-size: 30px;
+  color: #0b3f52;
   margin-bottom: 1rem;
 }
 
-.courses-subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-  color: #e0f0f6;
-}
-
-/* INTRODUCTION */
-.courses-intro {
-  padding: 3rem 0;
-}
-
-.courses-intro p {
+.who-we-are p {
   font-size: 1.15rem;
   color: #4b5563;
-  margin-bottom: 1.75rem;
-  max-width: 900px;
+  margin-bottom: 2rem;
+  line-height: 1.8;
 }
 
-/* CTA BUTTON */
-.courses-cta {
+.difference-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.difference-list li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+.difference-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #0b3f52;
+  font-weight: bold;
+}
+
+/* CONSULTATION FORM */
+.consultation-container {
+  min-height: 100vh;
+  background: #083c4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: #2e4fa3;
+  z-index: 1;
+}
+
+.circle1 { width: 450px; height: 450px; right: -120px; top: -80px; }
+.circle2 { width: 250px; height: 250px; right: 80px; top: 220px; }
+.circle3 { width: 120px; height: 120px; right: 40px; bottom: 120px; }
+
+.consultation-card {
   text-align: center;
-  margin-top: 3rem;
+  max-width: 520px;
+  width: 90%;
+  z-index: 2;
+  position: relative;
+  color: white;
+  padding: 2rem;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 14px 36px;
+.avatar-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-group img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid #083c4a;
+  margin-left: -10px;
+}
+
+.consultation-card h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #cde3ea;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.consultation-form input {
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  background: #e6e6e6;
+  font-size: 15px;
+}
+
+.consultation-form input:focus {
+  outline: none;
+}
+
+.consultation-form button {
+  margin-top: 10px;
+  padding: 12px 35px;
   border-radius: 25px;
-  background: #0b3f52;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 170px;
+  align-self: center;
 }
 
-.cta-button:hover {
-  background: #092f3c;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+.consultation-form button:hover {
+  background: white;
+  color: #083c4a;
 }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .courses-title {
-    font-size: 36px;
-  }
-
-  .courses-subtitle {
-    font-size: 1.15rem;
-  }
-
-  .courses-intro p {
-    font-size: 1.1rem;
-  }
+  .hero-title { font-size: 42px; }
+  .hero-subtitle { font-size: 18px; }
+  .who-we-are h2 { font-size: 28px; }
+  .circle1 { width: 380px; height: 380px; right: -100px; top: -60px; }
+  .circle2 { width: 200px; height: 200px; right: 60px; }
 }
 
 @media (max-width: 768px) {
-  .courses-header {
-    padding: 4rem 1rem 3rem 1rem;
-  }
-
-  .courses-title {
-    font-size: 28px;
-  }
-
-  .courses-subtitle {
-    font-size: 1rem;
-  }
-
-  .courses-intro {
-    padding: 2rem 1rem;
-  }
-
-  .courses-intro p {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    padding: 12px 28px;
-    font-size: 0.95rem;
-  }
+  .hero-title { font-size: 34px; }
+  .hero-subtitle { font-size: 16px; }
+  .central-paragraph p { font-size: 1.05rem; }
+  .who-we-are h2 { font-size: 24px; }
+  .who-we-are p { font-size: 1rem; }
+  .consultation-card h1 { font-size: 28px; }
+  .subtitle { font-size: 14px; }
+  .consultation-form input { padding: 12px; }
+  .circle1 { width: 300px; height: 300px; right: -120px; top: -120px; }
+  .circle2 { width: 160px; height: 160px; right: 40px; top: 260px; }
+  .circle3 { width: 90px; height: 90px; right: 20px; bottom: 100px; }
 }
 
 @media (max-width: 480px) {
-  .courses-title {
-    font-size: 24px;
-  }
-
-  .courses-subtitle {
-    font-size: 0.95rem;
-  }
-
-  .courses-intro p {
-    font-size: 0.95rem;
-  }
-
-  .cta-button {
-    padding: 10px 24px;
-    font-size: 0.9rem;
-  }
+  .hero-title { font-size: 28px; }
+  .hero-subtitle { font-size: 14px; }
+  .central-paragraph p { font-size: 0.95rem; }
+  .who-we-are h2 { font-size: 20px; }
+  .who-we-are p { font-size: 0.95rem; }
+  .consultation-card h1 { font-size: 24px; }
+  .avatar-group img { width: 45px; height: 45px; }
+  .consultation-form button { width: 150px; font-size: 14px; }
 }
