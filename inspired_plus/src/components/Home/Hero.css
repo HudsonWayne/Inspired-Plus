@@ -1,103 +1,59 @@
-/* HERO SECTION */
-
+/* Hero Section */
 .hero-section {
-  width: 100%;
+    background-color: #0b3f52;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 7rem 1.5rem;
+    height: 587px;
 }
 
-/* CONTAINER */
-
+/* Container */
 .hero-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* LEFT */
-
-.hero-left {
-  flex: 1;
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* TITLE */
-
-.hero-title {
-  font-size: 56px;
-  font-weight: 700;
+/* Left content */
+.hero-left .hero-title {
+  font-size: 3rem;
+  font-weight: 300;
   line-height: 1.2;
 }
 
-/* RIGHT */
+@media (min-width: 768px) {
+  .hero-left .hero-title {
+    font-size: 3.75rem;
+  }
+}
 
+/* Right SVG container */
 .hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  display: none;
+  height: 400px;
 }
 
-.hero-graphic {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-}
-
-/* ============================= */
-/* RESPONSIVE ONLY BELOW HERE */
-/* Desktop styles above untouched */
-/* ============================= */
-
-
-/* Tablet */
-
-@media (max-width: 1024px) {
-
-  .hero-title {
-    font-size: 44px;
-  }
-
-  .hero-graphic {
-    max-width: 420px;
-  }
-
-}
-
-
-/* Mobile */
-
-@media (max-width: 768px) {
-
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero-title {
-    font-size: 34px;
-  }
-
+@media (min-width: 768px) {
   .hero-right {
-    margin-top: 30px;
+    display: block;
   }
-
-  .hero-graphic {
-    max-width: 320px;
-  }
-
 }
 
-
-/* Small Phones */
-
-@media (max-width: 480px) {
-
-  .hero-title {
-    font-size: 28px;
-  }
-
-  .hero-graphic {
-    max-width: 260px;
-  }
-
+/* SVG graphic positioned at edge */
+.hero-graphic {
+  position: absolute;
+  right: -80px; /* pushes it to the edge */
+  bottom: 0;
+  max-width: 500px;
+  height: auto;
 }
