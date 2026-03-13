@@ -17,13 +17,13 @@ export default function About() {
               in residential childcare, helping individuals and organisations grow effectively.
             </p>
           </div>
-          <div className="hero-right">
+          {/* <div className="hero-right">
             <img
               src="https://cdn.prod.website-files.com/62e93021656e9a160943c0d2/62ebc9dde0329f7397590768_Graphic.svg"
               alt="Hero Graphic"
               className="hero-graphic"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
